@@ -1,7 +1,22 @@
 # adso3314566
 
+## analisis y desarrollo de software
+
+### centro de procesos industriales y construccion
+
+**regional caldas**
+
 ---
 
-##public repository adso 3314566
+| ID | THEME | DESCRIPTION                                |
+|--- |---          |---                                   |
+|01  | emmet       |work flow - markup & styling          |
+|02  |html         |structure - hypertext markup language |
+|03  |css          |look & fell - cascading style sheets  |
+|04  |javascript   |Beahavior - programing language       |
 
-### Lorem impsum dolor sit amet...
+[ADSO files drive](https://tinyurI.com/wnkk334u)
+
+[vercel url](https://vercel.com)
+
+
