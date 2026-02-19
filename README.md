@@ -17,8 +17,8 @@
    
 ![cristhianysantiago11](https://adso3314566-eta.vercel.app/soyyo.png)
 
-[ADSO files drive](https://tinyurI.com/wnkk334u)
+[ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
 
-[vercel url]((https://tinyurl.com/wnkk334u))
+[vercel url](https://adso3314566-eta.vercel.app/)
 
 

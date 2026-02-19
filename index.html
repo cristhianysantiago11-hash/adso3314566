@@ -7,7 +7,7 @@
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+NZ+Basic:wght@100..400&display=swap');
         body {
-            background: linear-gradient(rgb(45, 45, 244),black);
+            background: linear-gradient(rgb(5, 118, 218),black);
             color: white;
             font-family: "Playwrite NZ Basic", cursive;
             display:flex;
@@ -29,12 +29,58 @@
 
                 }
                 h4 {
+                        font-family: "Playwrite AT", cursive;
                     text-align: center;
                     font-size: 1.4rem;
                 }
             
 
-        }
+            }
+            menu {
+                display: flex;
+                flex-direction: column;
+                gap: 0.6rem;
+                a:link, a:visited {
+                    background-color: aquamarine;
+                    color: black;
+                    border-radius: 10rem;
+                    padding: 0.4rem;
+                    display: flex;
+                    text-decoration: none;
+
+                
+                span {
+                    width: 80px;
+                    height: 80px;
+                    background-color: rgb(21, 124, 149);
+                    border-radius: 50%;
+                    display: flex;
+                    font-size: 2rem;
+                    justify-content: center;
+                    align-items: center;
+
+
+                }
+                h4 { 
+                text-align: left;
+                text-indent: 0.5rem;
+                color: red;
+                margin: 0;
+                width: 225px;
+                }
+                small{
+                    display: block;
+                    font-size: 0.7rem;
+                    text-indent: 0.2rem;
+                    width: 225px;
+                }
+                transition: transform 0.4s ease-in;
+                &:hover {
+                    transform: scale(1.05) translateX(12px);
+
+                }
+                } 
+            }
     </style>
 </head>
 <body>
@@ -42,7 +88,38 @@
         <h1>ADSO 3314566</h1>
         <img src="soyyo.png" alt="">
         <h4>cristhian santiago cardenas </h4>
+        <menu>
+            <a href="01-emmet/">
+                <span>01</span>
+                <aside>
+                    <h4>emmet</h4>
+                    <small>work flow - markup & styling</small>
+
+                </aside>
+                 <a href="02-html/">
+                <span>02</span>
+                <aside>
+                    <h4>html</h4>
+                    <small>structure - hypertext language</small>
+                    
+                </aside>
+                <a href="03-css/">
+                <span>03</span>
+                <aside>
+                    <h4>css</h4>
+                    <small>look & fell - cascading style sheets</small>
+                    
+                </aside>
+                <a href="04-js/">
+                <span>04</span>
+                <aside>
+                    <h4>javascript</h4>
+                    <small>behavior - programing languege</small>
+                    
+                </aside>
+        </menu>
     </main>
+
     
 </body>
 </html>
