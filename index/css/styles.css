@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADSO 3314561</title>
-    <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+NZ+Basic:wght@100..400&display=swap');
 
         @keyframes movimiento {
@@ -120,46 +113,3 @@
                         }
                     }
                 }
-    </style>
-</head>
-
-<body>
-    <main>
-        <h1>ADSO 3314566</h1>
-        <img src="soyyo.png" alt="">
-        <h4>cristhian santiago cardenas </h4>
-        <menu>
-            <a href="./01-emmet.html">
-                <span>01</span>
-                <aside>
-                    <h4>emmet</h4>
-                    <small>work flow - markup & styling</small>
-
-                </aside>
-                <a href="02-html/">
-                    <span>02</span>
-                    <aside>
-                        <h4>html</h4>
-                        <small>structure - hypertext language</small>
-
-                    </aside>
-                    <a href="03-css/">
-                        <span>03</span>
-                        <aside>
-                            <h4>css</h4>
-                            <small>look & fell - cascading style sheets</small>
-
-                        </aside>
-                        <a href="04-js/">
-                            <span>04</span>
-                            <aside>
-                                <h4>javascript</h4>
-                                <small>behavior - programing languege</small>
-
-                            </aside>
-        </menu>
-    </main>
-
-</body>
-
-</html>

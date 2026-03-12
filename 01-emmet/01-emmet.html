@@ -5,137 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>01- Emmet</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
-
-        @keyframes movimiento {
-            0% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(15px);
-            }
-
-            100% {
-                transform: translateY(0);
-            }
-        }
-
-        body {
-            background-color: #36362E;
-            background-color: #000000;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
-            background-size: cover;
-            font-family: "Roboto Slab", serif;
-            color: rgb(249, 249, 195);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        img {
-            border: 6px solid #21bf08;
-            border-radius: 50%;
-            animation: movimiento 2.5s linear infinite;
-        }
-
-        a {
-            position: fixed;
-            left: 20px;
-            top: 20px;
-            border: 2px solid white;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50px;
-            width: 50px;
-            opacity: .7;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            border-color: rgb(249, 249, 195);
-        }
-
-
-        a:hover {
-            transform: scale(1.2);
-            opacity: 1;
-        }
-
-        .cuadro {
-            background: linear-gradient(45deg, #1e1e1e, #0f6302);
-            padding: 25px;
-            border-radius: 15px;
-            width: 400px;
-            margin: 30px auto;
-            color: white;
-        }
-
-        .cuadro2 {
-            background: linear-gradient(45deg, #0c0c0c, #138003);
-            padding: 25px;
-            border-radius: 15px;
-            width: 350px;
-            margin: 30px auto;
-            color: white;
-        }
-
-        .cuadro3 {
-            background: linear-gradient(45deg, #0c0c0c, #138003);
-            padding: 25px;
-            border-radius: 15px;
-            width: 200px;
-            margin: 30px auto;
-            color: white;
-            text-align: center;
-        }
-
-        .cuadro4 {
-            background: linear-gradient(45deg, #1e1e1e, #21bf08);
-            padding: 25px;
-            border-radius: 15px;
-            width: 350px;
-            margin: 30px auto;
-            color: white;
-            overflow-x: auto;
-
-        }
-
-        .cuadro5 {
-            background: linear-gradient(45deg, #1e1e1e, #21bf08);
-            padding: 25px;
-            border-radius: 15px;
-            width: 450px;
-            margin: 30px auto;
-            color: white;
-            overflow-x: auto;
-
-        }
-
-        .cuadro5a {
-            background: linear-gradient(45deg, #0c0c0c, #138003);
-            padding: 25px;
-            border-radius: 15px;
-            width: 400px;
-            margin: 30px auto;
-            color: white;
-            text-align: center;
-        }
-
-        .cuadro1a {
-            background: linear-gradient(45deg, #1e1e1e, #0c4a03);
-            padding: 25px;
-            border-radius: 15px;
-            width: 500px;
-            margin: 30px auto;
-            color: white;
-        }
-    </style>
+<link rel="stylesheet" href="./css/01-emmet.css">
 </head>
 
 <body>
     <main>
-        <a href="index.html">
+        <a href="../index/index.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#f9f991" viewBox="0 0 256 256">
                 <path
                     d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
@@ -144,7 +19,7 @@
         </a>
         <h1>01- Emmet</h1>
         <h4>Work Flow - Merkup & Styling</h4>
-        <img src="logo.png" width="250px" height="250px" alt="">
+        <img src="./img/logo.png" width="250px" height="250px" alt="">
         <section class="cuadro">
             <h2>Nesting ⬇️</h2>
             <H4>example:</H4>
