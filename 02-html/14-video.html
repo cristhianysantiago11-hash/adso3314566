@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>14-Video</title>
     <link rel="stylesheet" href="../02-html/styles1.css">
 </head>
+
 <body>
     <a href="../02-html/2-index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#f9f991" viewBox="0 0 256 256">
-                <path
-                    d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
-                </path>
-            </svg>
-        </a>
-        <main>    
-             <header>
-            <h1>14-Video</h1>
-            <h2>Inserts video files.</h2>
-             </header>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#f9f991" viewBox="0 0 256 256">
+            <path
+                d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
+            </path>
+        </svg>
+    </a>
+    <main>
+        <h1>14-Video</h1>
+        <h2>Inserts video files.</h2>
+        </header>
         <section>
-            <h3> Video</h3>
-            <iframe 
-                width="560"
-                height="315"
-                src="../01-emmet/video/html5.mp4"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-            </iframe>
+            <h3>Video</h3>
+            <video controls poster="../src/imgs/OIP.jpg">
+
+                <source src="../01-emmet/video/html5.mp4" type="video/mp4">
+
+            </video>
         </section>
     </main>
-</body>
-</html>
