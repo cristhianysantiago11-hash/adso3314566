@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>00-Title</title>
+    <link rel="stylesheet" href=" ../02-html/styles1.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    #contenedor {
+        width: 500px;
+        margin: 40px auto;
+        border: 2px solid #999;
+        padding: 20px;
+        background: #ec5109d0;
+    }
+
+    #contenedor div {
+        border: 2px solid #999;
+        background: #cfcfe6;
+        color: #666;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 40px 10px;
+        font-size: 24px;
+    }
+
+    .encabezado {
+        height: 80px;
+    }
+
+    .contenido {
+        height: 180px;
+    }
+
+    .pie {
+        height: 60px;
+    }
+</style>
+<body>
+    <a href="../02-html/2-index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffff" viewBox="0 0 256 256"><path d="M232,200a8,8,0,0,1-16,0,88.1,88.1,0,0,0-88-88H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,85.66,61.66L51.31,96H128A104.11,104.11,0,0,1,232,200Z">
+        </path>
+    </svg>
+    </a>
+    
+    <main>
+        <header>
+            <h1>15-Structure</h1> <br>
+            <h2>Defines layout with non-semantic tags (old style).</h2>
+        </header>
+    <section>
+        <h3>Structure</h3>
+        <p>The &lt;div&gt; element is used to group HTML elements together and apply styles to them.</p>
+        <div id="contenedor">
+        <div class="encabezado">encabezado</div>
+        <div class="contenido">contenido</div>
+        <div class="pie">pie</div>
+</div>
+    </section>
+    </main>
+</body>
+</html>

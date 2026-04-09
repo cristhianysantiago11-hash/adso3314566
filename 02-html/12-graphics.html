@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-Graphics</title>
+    <link rel="stylesheet" href="../02-html/styles1.css">
+</head>
+<body>
+    <a href="../02-html/2-index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#f9f991" viewBox="0 0 256 256">
+                <path
+                    d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
+                </path>
+            </svg>
+        </a>
+            <h1>12-Graphics</h1>
+            <h2>Creates inline graphics with tags.</h2>
+        </header>
+        <section class="centered">
+            <h3>Figuras con SVG</h3>
+
+            <svg width="340" height="240" viewBox="0 0 340 240">
+                <!-- Fondo del gráfico -->
+                <rect x="0" y="0" width="340" height="240" fill="white" rx="4" />
+
+                <g stroke="#eee" stroke-width="1">
+                    <line x1="40" y1="40" x2="320" y2="40" />
+                    <line x1="40" y1="80" x2="320" y2="80" />
+                    <line x1="40" y1="120" x2="320" y2="120" />
+                    <line x1="40" y1="160" x2="320" y2="160" />
+                </g>
+
+                <g font-size="10" fill="#666" font-family="sans-serif" text-anchor="end">
+                    <text x="35" y="43">4,0</text>
+                    <text x="35" y="83">3,0</text>
+                    <text x="35" y="123">2,0</text>
+                    <text x="35" y="163">1,0</text>
+                    <text x="35" y="203">0</text>
+                </g>
+
+                <line x1="40" y1="200" x2="320" y2="200" stroke="#ddd" stroke-width="1" />
+
+                <g fill="#add8e6" fill-opacity="0.6" stroke="#87ceeb" stroke-width="1">
+                    
+                    <rect x="55" y="160" width="45" height="40" />
+                    
+                    <rect x="120" y="120" width="45" height="80" />
+                    
+                    <rect x="185" y="80" width="45" height="120" />
+                    
+                    <rect x="250" y="40" width="45" height="160" />
+                </g>
+
+                <g font-size="10" fill="#333" font-family="sans-serif" text-anchor="middle">
+                    <text x="77" y="215">Enero</text>
+                    <text x="142" y="215">Febrero</text>
+                    <text x="207" y="215">Marzo</text>
+                    <text x="272" y="215">Abril</text>
+                </g>
+            </svg>
+        </section>
+    </main>
+</body>
+</html>
