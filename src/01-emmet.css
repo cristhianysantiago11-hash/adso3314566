@@ -44,7 +44,7 @@
             align-items: center;
             height: 50px;
             width: 50px;
-            opacity: .7;
+            opacity: .8;
             transition: transform 0.3s ease, opacity 0.3s ease;
             border-color: rgb(249, 249, 195);
         }

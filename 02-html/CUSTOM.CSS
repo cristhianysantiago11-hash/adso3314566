@@ -1,0 +1,32 @@
+section article{
+        background-color: #c73602;
+        border-radius: 50%;
+        color: #0c0c0c;
+        margin: 2rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300PX;
+        height: 300px;
+        text-shadow: 0 2px #161615 width: 300px;
+        font-size: 6rem;
+
+        &:hover {
+            cursor: pointer;
+            animation: 1.4s animArticle ease-in infinite;
+        }
+    
+}
+
+@keyframes animArticle {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+
+    }
+}

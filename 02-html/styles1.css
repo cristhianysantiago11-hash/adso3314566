@@ -1,0 +1,158 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+NZ+Basic:wght@100..400&display=swap');
+
+        @keyframes movimiento {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(15px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+            body {
+                background: linear-gradient(rgb(5, 118, 218), black);
+                color: white;
+                background-color:#e44e25;
+                background-color: #000000;
+                background-color: #ffffff;
+                background-color: #f03c05;
+                background-color: #e44e25;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top left;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100dvb;
+
+                main {
+                    h1 {
+                        font-size: 3.4rem;
+                        margin: 0;
+                        text-align: center;
+                    }
+                    svg{
+                position: fixed;
+                top: 15px;
+                left: 15px;
+                border: 2px solid white;
+                border-radius: 50%;
+                padding: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0.6; 
+                transition: all 0.4s ease-in;
+                z-index: 1000;
+
+                
+                    }
+
+                    img {
+                        border: 7px solid rgb(22, 22, 22);
+                        border-radius: 50%;
+                        height: 250px;
+                        ;
+                        display: flex;
+                        margin: 1rem auto;
+                        width: 250px;
+                        animation: movimiento 2.5s linear infinite;
+
+
+
+                    }
+
+                    h4 {
+                        font-family: "Playwrite AT", cursive;
+                        text-align: center;
+                        font-size: 1.4rem;
+                    }
+                    header {
+                        h1 {
+                            font-size: 2rem;
+                        }
+                        h2 {
+                            font-size: 1rem;
+                            color: #fff9;
+                        }
+                        h1,h2 {
+                            text-align: center;
+                    }
+                }
+                    section {
+                            background-color: #0009;
+                            border-radius: 0.2rem;
+                            min-width: 380px;
+                            margin-top: 2rem;
+                            padding: 1rem;
+                            h3 {
+                                border-bottom: 2px dotted #fff;
+                                margin: 0;
+                            }
+                            p {
+                                color: #fff9;
+                            }
+                    }
+
+                
+
+                menu {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.6rem;
+
+                    a:link,
+                    a:visited {
+                        background-color: rgb(234, 141, 98);
+                        color: black;
+                        border-radius: 10rem;
+                        padding: 0.4rem;
+                        display: flex;
+                        text-decoration: none;
+                        text-align: center;
+
+
+                        span {
+                            width: 80px;
+                            height: 80px;
+                            background-color: #e44e25;
+                            border-radius: 50%;
+                            display: flex;
+                            font-size: 2rem;
+                            justify-content: center;
+                            align-items: center;
+
+
+                        }
+
+                        h4 {
+                            text-align: left;
+                            text-indent: 0.5rem;
+                            color: rgb(16, 15, 15);
+                            margin: 0;
+                            width: 225px;
+                        }
+
+                        small {
+                            display: block;
+                            font-size: 0.7rem;
+                            text-indent: 0.2rem;
+                            width: 225px;
+                        }
+
+                        transition: transform 0.4s ease-in;
+
+                        &:hover {
+                            transform: scale(1.05) translateX(12px);
+
+                        }
+                    }
+                }

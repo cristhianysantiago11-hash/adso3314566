@@ -15,7 +15,7 @@
 |03  |css          |look & fell - cascading style sheets  |
 |04  |javascript   |Beahavior - programing language       |
    
-![cristhianysantiago11](https://adso3314566-eta.vercel.app/soyyo.png)
+![cristhianysantiago11](https://adso3314566-eta.vercel.app/src/img/soyyo.png)
 
 [ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
 
