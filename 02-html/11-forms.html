@@ -1,128 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>11-Forms</title>
     <link rel="stylesheet" href="../02-html/styles1.css">
 </head>
+
 <body>
     <a href="../02-html/2-index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#f9f991" viewBox="0 0 256 256">
-                <path
-                    d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
-                </path>
-            </svg>
-        </a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#f9f991" viewBox="0 0 256 256">
+            <path
+                d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
+            </path>
+        </svg>
+    </a>
+    <main>
+        <!---->
         <main>
-<!---->
- <main>
-    <header>
-      <h1>11-Forms</h1>
-      <h2>Creates interactive forms for user input.</h2>
-    </header>
+            <header>
+                <h1>11-Forms</h1>
+                <h2>Creates interactive forms for user input.</h2>
+            </header>
 
-    <section>
-      <h2>Complete Form</h2>
+            <section>
+                <h2>Complete Form</h2>
 
-      <form>
+                <form>
 
-        <fieldset>
-          <legend>Text Inputs</legend>
+                    <fieldset>
+                        <legend>Text Inputs</legend>
 
-          <label>Name:</label>
-          <input type="text" name="name">
-          <br><br>
-          <label>Password:</label>
-          <input type="password" name="password">
-          <br><br>
-          <label>Email:</label>
-          <input type="email" name="email">
-          <br><br>
-          <label>Search:</label>
-          <input type="search" name="search">
-        </fieldset>
+                        <label>Name:</label>
+                        <input type="text" name="name">
+                        <br><br>
+                        <label>Password:</label>
+                        <input type="password" name="password">
+                        <br><br>
+                        <label>Email:</label>
+                        <input type="email" name="email">
+                        <br><br>
+                        <label>Search:</label>
+                        <input type="search" name="search">
+                    </fieldset>
 
-        <fieldset>
-          <legend>Numbers & Dates</legend>
+                    <fieldset>
+                        <legend>Numbers & Dates</legend>
 
-          <label>Number:</label>
-          <input type="number" name="number">
-          <br>
-          <label>Range:</label>
-          <input type="range" name="range">
-          <br>
-          <label>Date:</label>
-          <input type="date" name="date">
-          <br>
-          <label>Time:</label>
-          <input type="time" name="time">
-          <br>
-          <label>Week:</label>
-          <input type="week" name="week">
-          <br>
-          <label>Month:</label>
-          <input type="month" name="month">
-        </fieldset>
+                        <label>Number:</label>
+                        <input type="number" name="number">
+                        <br>
+                        <label>Range:</label>
+                        <input type="range" name="range">
+                        <br>
+                        <label>Date:</label>
+                        <input type="date" name="date">
+                        <br>
+                        <label>Time:</label>
+                        <input type="time" name="time">
+                        <br>
+                        <label>Week:</label>
+                        <input type="week" name="week">
+                        <br>
+                        <label>Month:</label>
+                        <input type="month" name="month">
+                    </fieldset>
 
-        <fieldset>
-          <legend>Pickers</legend>
+                    <fieldset>
+                        <legend>Pickers</legend>
 
-          <label>Color:</label>
-          <input type="color" name="color">
-          <br>
-          <label>File:</label>
-          <input type="file" name="file">
-        </fieldset>
-        <fieldset>
-          <legend>Options</legend>
+                        <label>Color:</label>
+                        <input type="color" name="color">
+                        <br>
+                        <label>File:</label>
+                        <input type="file" name="file">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Options</legend>
 
-          <div class="inline">
-            <input type="radio" name="gender" value="male">
-            <label>Male</label>
-          </div>
-          <div class="inline">
-            <input type="radio" name="gender" value="female">
-            <label>Female</label>
-          </div>
+                        <div class="inline">
+                            <input type="radio" name="gender" value="male">
+                            <label>Male</label>
+                        </div>
+                        <div class="inline">
+                            <input type="radio" name="gender" value="female">
+                            <label>Female</label>
+                        </div>
 
-          <div class="inline">
-            <input type="checkbox" name="terms">
-            <label>Accept terms</label>
-          </div>
+                        <div class="inline">
+                            <input type="checkbox" name="terms">
+                            <label>Accept terms</label>
+                        </div>
 
-        </fieldset>
+                    </fieldset>
 
-        <fieldset>
-          <legend>Select & Textarea</legend>
+                    <fieldset>
+                        <legend>Select & Textarea</legend>
 
-          <select name="options">
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </select>
-          <br><br>
-          <textarea rows="4" placeholder="Write something..."></textarea>
+                        <select name="options">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                        <br><br>
+                        <textarea rows="4" placeholder="Write something..."></textarea>
 
-        </fieldset>
+                    </fieldset>
 
-        <fieldset>
-          <legend>Progress</legend>
-          <progress value="60" max="100"></progress>
-        </fieldset>
+                    <fieldset>
+                        <legend>Progress</legend>
+                        <progress value="60" max="100"></progress>
+                    </fieldset>
 
-        <fieldset>
-          <legend>Buttons</legend>
+                    <fieldset>
+                        <legend>Buttons</legend>
 
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
 
-        </fieldset>
+                    </fieldset>
 
-      </form>
+                </form>
 
-    </section>
-  </main>
+            </section>
+        </main>
 </body>
 
 </html>
