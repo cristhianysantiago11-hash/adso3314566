@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 - Colors</title>
+    <link rel="stylesheet" href="estylos.css">
+    <style>
+        div.colors {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                div {
+                    color: black;
+                    height: 70px;
+                    width: 90px;
+                    transition: all 0.4s ease-in;
+                    font-size: 10px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.4);
+                    }
+                    &:first-child,
+                    &:last-child {
+                        color: white;
+                    }
+                    
+&.hex-marron { background-color: #a52a2a; }
+&.hex-red { background-color: #ff0000; }
+&.hex-orange { background-color: #ffa500; }
+&.hex-yellow { background-color: #ffff00; }
+&.hex-olive { background-color: #808000; }
+&.hex-purple { background-color: #800080; }
+&.hex-fuchsia { background-color: #ff00ff; }
+&.hex-white { background-color: #ffffff; }
+&.hex-lime { background-color: #00ff00; }
+&.hex-green { background-color: #008000; }
+&.hex-navy { background-color: #000080; }
+&.hex-blue { background-color: #0000ff; }
+&.hex-aqua { background-color: #00ffff; }
+&.hex-teal { background-color: #008080; }
+&.hex-black { background-color: #000000; }
+&.hex-silver { background-color: #c0c0c0; }
+&.hex-gray { background-color: #808080; }
+                    &.marron {
+                        background-color: brown;
+                    }
+
+                    &.red {
+                        background-color: red;
+                    }
+
+                    &.orange {
+                        background-color: orange;
+                    }
+
+                    &.yellow {
+                        background-color: yellow;
+                    }
+
+                    &.olive {
+                        background-color: olive;
+                    }
+
+                    &.purple {
+                        background-color: purple;
+                    }
+
+                    &.fuchsia {
+                        background-color: fuchsia;
+                    }
+
+                    &.white {
+                        background-color: white;
+                    }
+
+                    &.lime {
+                        background-color: lime;
+                    }
+
+                    &.green {
+                        background-color: green;
+                    }
+
+                    &.navy {
+                        background-color: navy;
+                    }
+
+                    &.blue {
+                        background-color: blue;
+                    }
+
+                    &.aqua {
+                        background-color: aqua;
+                    }
+
+                    &.teal {
+                        background-color: teal;
+                    }
+
+                    &.black {
+                        background-color: rgb(31, 28, 28);
+                    }
+
+                    &.silver {
+                        background-color: silver;
+                    }
+
+                    &.gray {
+                        background-color: gray;
+                    }
+
+                    /* Colores RGB */
+                    &.rgb-marron {
+                        background-color: rgb(165, 42, 42);
+                    }
+
+                    &.rgb-red {
+                        background-color: rgb(255, 0, 0);
+                    }
+
+                    &.rgb-orange {
+                        background-color: rgb(255, 165, 0);
+                    }
+
+                    &.rgb-yellow {
+                        background-color: rgb(255, 255, 0);
+                    }
+
+                    &.rgb-olive {
+                        background-color: rgb(128, 128, 0);
+                    }
+
+                    &.rgb-purple {
+                        background-color: rgb(128, 0, 128);
+                    }
+
+                    &.rgb-fuchsia {
+                        background-color: rgb(255, 0, 255);
+                    }
+
+                    &.rgb-white {
+                        background-color: rgb(255, 255, 255);
+                    }
+
+                    &.rgb-lime {
+                        background-color: rgb(0, 255, 0);
+                    }
+
+                    &.rgb-green {
+                        background-color: rgb(0, 128, 0);
+                    }
+
+                    &.rgb-navy {
+                        background-color: rgb(0, 0, 128);
+                    }
+
+                    &.rgb-blue {
+                        background-color: rgb(0, 0, 255);
+                    }
+
+                    &.rgb-aqua {
+                        background-color: rgb(0, 255, 255);
+                    }
+
+                    &.rgb-teal {
+                        background-color: rgb(0, 128, 128);
+                    }
+
+                    &.rgb-black {
+                        background-color: rgb(0, 0, 0);
+                    }
+
+                    &.rgb-silver {
+                        background-color: rgb(192, 192, 192);
+                    }
+
+                    &.rgb-gray {
+                        background-color: rgb(128, 128, 128);
+                    }
+                }
+            }
+        }
+
+        .color-name {
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .rgb-text {
+            font-size: 9px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="contenedor-botones">
+            <a href="index.html" class="boton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000" viewBox="0 0 256 256">
+                    <path d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path>
+                </svg>
+            </a>
+
+            <a href="../index.html" class="boton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                    <path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path>
+                </svg>
+            </a>
+        </div>
+        <br>
+        <br>
+        <main>
+            <header>
+                <h1>11 - Colors</h1>
+                <h2>Are specified using predefined color names, or RGB, HEX, HSL.</h2>
+            </header>
+            
+            <!-- SECCIÓN 1: NAME COLORS -->
+            <section>
+                <h3>Name Colors</h3>
+                <br>
+                <div class="colors">
+                    <div>
+                        <div class="marron">Marron</div>
+                        <div class="red">Red</div>
+                        <div class="orange">Orange</div>
+                        <div class="yellow">Yellow</div>
+                        <div class="olive">Olive</div>
+                    </div>
+                    <div>
+                        <div class="purple">Purple</div>
+                        <div class="fuchsia">Fuchsia</div>
+                        <div class="white">White</div>
+                        <div class="lime">Lime</div>
+                        <div class="green">Green</div>
+                    </div>
+                    <div>
+                        <div class="navy">Navy</div>
+                        <div class="blue">Blue</div>
+                        <div class="aqua">Aqua</div>
+                        <div class="teal">Teal</div>
+                    </div>
+                    <div>
+                        <div class="black">Black</div>
+                        <div class="silver">Silver</div>
+                        <div class="gray">Gray</div>
+                    </div>
+                </div>
+            </section>
+
+            <br><br>
+
+            <!-- SECCIÓN 2: RGB DECIMAL - COLOR ENCIMA DEL CÓDIGO -->
+            <section>
+                <h3>RGB Decimal</h3>
+                <br>
+                <div class="colors">
+                    <div>
+                        <div class="rgb-marron"><span class="color-name">Marron</span><br><span class="rgb-text">165,42,42</span></div>
+                        <div class="rgb-red"><span class="color-name">Red</span><br><span class="rgb-text">255,0,0</span></div>
+                        <div class="rgb-orange"><span class="color-name">Orange</span><br><span class="rgb-text">255,165,0</span></div>
+                        <div class="rgb-yellow"><span class="color-name">Yellow</span><br><span class="rgb-text">255,255,0</span></div>
+                        <div class="rgb-olive"><span class="color-name">Olive</span><br><span class="rgb-text">128,128,0</span></div>
+                    </div>
+                <div>
+    <div class="rgb-purple">Purple<br>128,0,128</div>
+    <div class="rgb-fuchsia">Fuchsia<br>255,0,255</div>
+    <div class="rgb-white">White<br>255,255,255</div>
+    <div class="rgb-lime">Lime<br>0,255,0</div>
+    <div class="rgb-green">Green<br>0,128,0</div>
+</div>
+<div>
+    <div class="rgb-navy">Navy<br>0,0,128</div>
+    <div class="rgb-blue">Blue<br>0,0,255</div>
+    <div class="rgb-aqua">Aqua<br>0,255,255</div>
+    <div class="rgb-teal">Teal<br>0,128,128</div>
+</div>
+<div>
+    <div class="rgb-black">Black<br>0,0,0</div>
+    <div class="rgb-silver">Silver<br>192,192,192</div>
+    <div class="rgb-gray">Gray<br>128,128,128</div>
+</div>
+                </div>
+                <div>
+                    <h3>RGB Hexadecimal</h3>
+                <br>
+                <div class="colors">
+                    <div>
+                        <div class="hex-marron"><br>#a52a2a</div>
+                        <div class="hex-red"><br>#ff0000</div>
+                        <div class="hex-orange"><br>#ffa500</div>
+                        <div class="hex-yellow"><br>#ffff00</div>
+                        <div class="hex-olive"><br>#808000</div>
+                    </div>
+                    <div>
+                        <div class="hex-purple"><br>#800000</div>
+                        <div class="hex-fuchsia"><br>#ff00ff</div>
+                        <div class="hex-white"><br>#ffffff</div>
+                        <div class="hex-lime"><br>#00ff00</div>
+                        <div class="hex-green"><br>#008000</div>
+                    </div>
+                    <div>
+                        <div class="hex-navy"><br>#000080</div>
+                        <div class="hex-blue"><br>#0000ff</div>
+                        <div class="hex-aqua"><br>#00ffff</div>
+                        <div class="hex-teal"><br>#008080</div>
+                    </div>
+                    <div>
+                        <div class="hex-black"><br>#000000</div>
+                        <div class="hex-silver"><br>#c0c0c0</div>
+                        <div class="hex-gray"><br>#808080</div>
+                    </div>
+                </div>
+                </div>
+                <div>
+                    <h3>hsl (hue , saturation , lighting):</h3>
+                <br>
+                <div class="colors">
+                    <div></div>
+            </section>
+        </main>
+    </main>
+</body>
+
+</html>
