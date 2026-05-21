@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 - Background</title>
+    <link rel="stylesheet" href="estylos.css">
+    <style>
+        p{
+            font-family: "Roboto Slab", serif;
+        }
+
+        div.background_color {
+            background-color: rgb(131, 7, 147);
+            margin: 4rem auto;
+            width: 300px;
+            height: 300px;
+        }
+
+        div.background_image {
+            background: url('img/colo.png') no-repeat center/cover;
+            margin: 4rem auto;
+            width: 300px;
+            height: 300px;
+        }
+
+        div.background_repeat {
+            background: url('img/color2.png') repeat center/cover;
+            background-repeat: repeat;
+            margin: 4rem auto;
+            width: 300px;
+            height: 300px;
+        }
+
+div.background_position {
+    background-image: url(img/color3.png);
+    background-repeat: no-repeat;
+
+    background-position: left 20px center;
+
+    background-size: 260px;
+
+    width: 300px;
+    height: 300px;
+}
+
+        div.background_size {
+            background: url('img/color4.png') no-repeat center/cover;
+            background-size: 400px 400px contain;
+            margin: 4rem auto;
+            width: 400px;
+            height: 300px;
+        }           
+    div.background_position {
+    background-image: url(img/color3.png);
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-attachment: fixed; 
+    background-size: 260px;
+    width: 300px;
+    height: 300px;
+}
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="contenedor-botones">
+
+            <a href="../03-css/index3.html" class="boton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000" viewBox="0 0 256 256">
+                    <path
+                        d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
+                    </path>
+                </svg>
+            </a>
+
+            <a href="../index.html" class="boton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                    <path
+                        d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <br>
+        <br>
+        <main>
+            <header>
+                <h1>14 - Background</h1>
+                <h2>- background-color <br>
+                    - background-image <br>
+                    - background-repeat <br>
+                    - background-position <br>
+                    - background-size
+                </h2>
+            </header>
+            <section>
+                <h3>Background Color</h3>
+                <p>coloca un color de fondo.</p>
+                <div class="background_color"></div>
+                <h3>Background Image</h3>
+                <p>coloca una imagen de fondo.</p>
+                <div class="background_image"></div>
+                <h3>Background Repeat</h3>
+                <p>controla si la imagen se repite o no.</p>
+                <div class="background_repeat"></div>
+                <h3>Background Position</h3>
+                <p>mueve la imagen dentro de la caja.</p>
+                <div class="background_position"></div>
+                <h3>Background Size</h3>
+                <p>controla el tamaño de la imagen.</p>
+                <div class="background_size"></div>
+            </section>
+        </main>
+
+</body>
+
+</html>

@@ -1,29 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>06-specificity</title>
+    <title>06-Specificity</title>
     <link rel="stylesheet" href="estylos.css">
-</head>
-<body>
-    <a href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#f9f991" viewBox="0 0 256 256">
-                <path
-                    d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
-                </path>
-            </svg>
-        </a>
-        <main>
-            <header>
-                <h1>06-specificity</h1>
-                <h2>
-                    Is score/rank that determines which style declaration is ultimately applied to an element
-                </h2>
-            </header>
-            <section>
 
-            </section>
-        </main>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+    
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 40vh; 
+            padding: 1rem;
+        }
+        
+        button.green {
+            background-color: rgb(0, 196, 39);
+            display: flex;
+            margin: 2rem auto;
+            padding: 0.6rem 1.2rem;
+            border-radius: 0.4rem;
+            border: none;
+            font-size: 1.2rem;
+            color: white;
+            cursor: pointer;
+
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        }
+
+        section button.green:hover {
+            background: #1ef01e;
+            transform: scale(1.08);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+    
+        button.green:active {
+            transform: scale(0.95);
+        }
+
+        .btn-home {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            padding: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: .7;
+            transition: all 0.3s ease;
+        }
+
+        .btn-home:hover {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="/03-css/index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+            <path
+                d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z">
+            </path>
+        </svg>
+    </a>
+
+    <main>
+        <header>
+            <h1>06-Specificity</h1>
+            <h2>
+                Is score/rank that determines which style declaration is ultimately applied to an element.
+            </h2>
+        </header>
+
+        <section>
+            <button class="green">
+                Press me
+            </button>
+        </section>
+    </main>
+
 </body>
+
 </html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-position</title>
+    <link rel="stylesheet" href="estylos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            padding-bottom: 200px;
+        }
+
+        .contenedor-botones {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .boton {
+            background: rgba(0,0,0,0.7);
+            border-radius: 50%;
+            padding: 8px;
+            display: inline-block;
+        }
+
+        section {
+            background: #f9f9f9;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            background: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .caja {
+            background: #4ecdc4;
+            width: 150px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-weight: bold;
+            color: white;
+            margin: 20px 0;
+        }
+
+        .contenedor {
+            background: #f0f0f0;
+            border: 2px dashed #999;
+            padding: 20px;
+            min-height: 250px;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .static {
+            position: static;
+            background: #650238;
+        }
+        .relative {
+            position: relative;
+            background: #370338;
+            top: 20px;
+            left: 30px;
+        }
+        .absolute {
+            position: absolute;
+            background: #ee4cee;
+            color: #333;
+            bottom: 20px;
+            right: 20px;
+        }
+        .fixed {
+            position: fixed;
+            background: #a855f7;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            width: auto;
+        }
+
+        .sticky {
+            position: sticky;
+            background: #e706eb;
+            top: 10px;
+        }
+
+        .contenedor-sticky {
+            background: #f0f0f0;
+            border: 2px dashed #999;
+            padding: 20px;
+            height: 300px;
+            overflow-y: auto;
+        }
+
+        .mucho-texto {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-botones">
+        <a href="../index.html" class="boton">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 256 256">
+                <path d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path>
+            </svg>
+        </a>
+        <a href="../index.html" class="boton">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 256 256">
+                <path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path>
+            </svg>
+        </a>
+    </div>
+
+    <main>
+        <header>
+            <h1>15-position</h1>
+            <h2>static / relative / absolute / fixed / sticky</h2>
+        </header>
+
+        <!-- STATIC -->
+        <section>
+            <h3>STATIC</h3>
+            <div class="caja static">STATIC</div>
+        </section>
+
+        <!-- RELATIVE -->
+        <section>
+            <h3>RELATIVE</h3>
+            <div class="caja relative">RELATIVE</div>
+        </section>
+
+        <!-- ABSOLUTE -->
+        <section>
+            <h3>ABSOLUTE</h3>
+            <div class="contenedor">
+                <div class="caja absolute">ABSOLUTE</div>
+            </div>
+        </section>
+
+        <!-- FIXED -->
+        <div class="fixed">FIXED</div>
+
+        <section>
+            <h3>STICKY</h3>
+            <div class="contenedor-sticky">
+                <div class="caja sticky">STICKY</div>
+                <div class="mucho-texto"></div>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa excepturi ipsam repellendus repellat expedita perspiciatis ut, velit possimus? Dicta soluta dolorum impedit inventore. Dignissimos obcaecati consequatur exercitationem aspernatur tenetur esse?</h3>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,31 +1,45 @@
+<!---->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>08-relative-units</title>
-    <link rel="stylesheet" href="estylos.css">
+    <title>08-Relative Units</title>
+    <link rel="stylesheet" href="../src/css/03-css.css">
+    <style>
+        li.rel1 { font-size: 15px; }
+        li.rel2 { font-size: 1.5em; }
+        li.rel3 { font-size: 2rem; }
+        li.rel4 { font-size: 2.4ex; }
+    </style>
 </head>
 <body>
-    <a href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#f9f991" viewBox="0 0 256 256">
-                <path
-                    d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
-                </path>
-            </svg>
-        </a>
-        <main>
-            <header>
-                <h1>08-relative-units</h1>
-                <h2>
-                    Specify a length relative to another length property.
-
-                    
-                </h2>
-            </header>
-            <section>
-
-            </section>
-        </main>
+    <a href="../03-css/index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path></svg>    </a>
+    <main>
+        <header>
+            <h1>08-Relative Units</h1>
+            <h2>Specify a length relative to another length property.</h2>
+            <ul>
+                <li>Pixel (px)</li>
+                <li>M (em)</li>
+                <li>X (ex)</li>
+                <li>Root M (rem)</li>
+                <li>viewport units horizontal (vh)</li>
+                <li>viewport units with (vw)</li>
+                <li>Large viewport (lvh|lvw)</li>
+                <li>small viewport (svh|svw)</li>
+                <li>dinamic viewport (dvh|dvw)</li>
+            </ul>
+        </header>
+        <section>
+            <ul>
+                <li class="rel1">px: 15px</li>
+                <li class="rel2">em: 1.5em</li>
+                <li class="rel3">rem: 2rem</li>
+                <li class="rel4">ex: 2.4ex</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>

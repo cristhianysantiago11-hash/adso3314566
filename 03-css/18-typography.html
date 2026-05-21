@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografía en CSS - Ejemplos básicos</title>
+    <link rel="stylesheet" href="estylos.css">
+    <style>
+
+        /* Estilos para ejemplos de tipografía */
+        .fuente-serif { font-family: 'Georgia', 'Times New Roman', serif; }
+        .fuente-mono { font-family: 'Courier New', 'Fira Code', monospace; }
+        .fuente-sans { font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; }
+
+        .texto-xs { font-size: 0.75rem; }
+        .texto-sm { font-size: 0.875rem; }
+        .texto-base { font-size: 1rem; }
+        .texto-lg { font-size: 1.25rem; }
+        .texto-xl { font-size: 1.5rem; }
+
+        .peso-light { font-weight: 300; }
+        .peso-normal { font-weight: 400; }
+        .peso-semibold { font-weight: 600; }
+        .peso-bold { font-weight: 700; }
+
+        .transform-upper { text-transform: uppercase; }
+        .transform-lower { text-transform: lowercase; }
+        .transform-cap { text-transform: capitalize; }
+
+        .deco-underline { text-decoration: underline; }
+        .deco-overline { text-decoration: overline; }
+        .deco-line-through { text-decoration: line-through; }
+
+        .text-left { text-align: left; }
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+        .text-justify { text-align: justify; }
+
+        .letter-spacing-wide { letter-spacing: 2px; }
+        .word-spacing-wide { word-spacing: 4px; }
+
+        .leading-tight { line-height: 1.2; }
+        .leading-normal { line-height: 1.5; }
+        .leading-loose { line-height: 1.8; }
+
+        .text-shadow-light { text-shadow: 1px 1px 1px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+<main>
+    <header>
+        <h1>📘 Tipografía en CSS</h1>
+        <h2>Propiedades básicas: familia, tamaño, peso, transformación, decoración, alineación y espaciado</h2>
+    </header>
+
+    <!-- 1. Familia -->
+    <h3> Familia de fuentes</h3>
+    <section class="contenedor">
+        <div class="grid-ejemplos">
+            <div class="card-ejemplo"><p>Sans‑serif</p><div class="fuente-sans">Texto moderno</div></div>
+            <div class="card-ejemplo"><p>Serif</p><div class="fuente-serif">Texto clásico</div></div>
+            <div class="card-ejemplo"><p>Monospace</p><div class="fuente-mono">Código o datos</div></div>
+        </div>
+    </section>
+
+    <!-- 2. Tamaño -->
+    <h3> Tamaño de fuente</h3>
+    <section class="contenedor">
+        <div class="demo-box texto-xs">texto-xs (0.75rem) - muy pequeño</div>
+        <div class="demo-box texto-sm">texto-sm (0.875rem) - pequeño</div>
+        <div class="demo-box texto-base">texto-base (1rem) - normal</div>
+        <div class="demo-box texto-lg">texto-lg (1.25rem) - grande</div>
+        <div class="demo-box texto-xl">texto-xl (1.5rem) - extra grande</div>
+    </section>
+
+    <!-- 3. Peso (font-weight) -->
+    <h3> Grosor (font-weight)</h3>
+    <section class="contenedor">
+        <div class="grid-ejemplos">
+            <div class="card-ejemplo"><p>Light</p><span class="peso-light">Suave (300)</span></div>
+            <div class="card-ejemplo"><p>Normal</p><span class="peso-normal">Regular (400)</span></div>
+            <div class="card-ejemplo"><p>Semibold</p><span class="peso-semibold">Seminegrita (600)</span></div>
+            <div class="card-ejemplo"><p>Bold</p><span class="peso-bold">Negrita (700)</span></div>
+        </div>
+    </section>
+
+    <!-- 4. Transformación -->
+    <h3> Transformación de texto</h3>
+    <section class="contenedor">
+        <div class="demo-box transform-upper">texto en mayúsculas</div>
+        <div class="demo-box transform-lower">TEXTO EN MINÚSCULAS</div>
+        <div class="demo-box transform-cap">texto con capitalización inicial</div>
+    </section>
+
+    <!-- 5. Decoración -->
+    <h3> Decoración</h3>
+    <section class="contenedor">
+        <div class="demo-box deco-underline">Subrayado</div>
+        <div class="demo-box deco-overline">Línea superior</div>
+        <div class="demo-box deco-line-through">Tachado</div>
+    </section>
+
+    <!-- 6. Alineación -->
+    <h3> Alineación</h3>
+    <section class="contenedor">
+        <div class="demo-box text-left">Izquierda (por defecto)</div>
+        <div class="demo-box text-center">Centrado</div>
+        <div class="demo-box text-right">Derecha</div>
+        <div class="demo-box text-justify">Justificado: Este texto se extiende para ocupar todo el ancho de la línea, creando bordes rectos a izquierda y derecha.</div>
+    </section>
+
+    <!-- 7. Espaciado -->
+    <h3> Espaciado entre letras y palabras</h3>
+    <section class="contenedor">
+        <div class="demo-box letter-spacing-wide">Letras separadas (letter-spacing: 2px)</div>
+        <div class="demo-box word-spacing-wide">Palabras separadas (word-spacing: 4px)</div>
+    </section>
+
+    <!-- 8. Altura de línea -->
+    <h3> Altura de línea (line-height)</h3>
+    <section class="contenedor">
+        <div class="demo-box leading-tight">Compacto (1.2) - texto más apretado, útil para títulos.</div>
+        <div class="demo-box leading-normal">Normal (1.5) - el más común para lectura.</div>
+        <div class="demo-box leading-loose">Espaciado (1.8) - más aireado, bueno para párrafos largos.</div>
+    </section>
+
+    <!-- 9. Sombra simple -->
+    <h3> Sombra de texto</h3>
+    <section class="contenedor">
+        <div class="demo-box text-shadow-light">Sombra sutil</div>
+    </section>
+
+    <!-- 10. Combinación -->
+    <h3> Ejemplo combinado</h3>
+    <section class="contenedor" style="text-align: center;">
+        <p class="texto-lg peso-semibold" style="margin-bottom: 0.5rem;">Texto con varias propiedades</p>
+        <p style="font-style: italic; color: #2c3e66;">familia sans-serif, tamaño grande, negrita y color azulado</p>
+        <p class="deco-underline">y un subrayado al final</p>
+    </section>
+</main>
+
+</body>
+</html>

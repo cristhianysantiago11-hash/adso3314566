@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-clases en CSS - Ejemplos básicos</title>
+    <link rel="stylesheet" href="estylos.css">
+    <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#f9f991" viewBox="0 0 256 256">
+                <path
+                    d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
+                </path>
+            </svg>
+        </a>
+</head>
+<body>
+
+<main>
+    <header>
+        <h1>🎯 Pseudo-clases en CSS</h1>
+        <h2>:hover | :focus | :active | :first-child | :last-child | :nth-child | :not | :link / :visited</h2>
+    </header>
+
+    <!-- 1. :hover y :active -->
+    <h3>🖱️ Interacción del usuario</h3>
+    <section class="contenedor">
+        <p><strong>:hover</strong> → al pasar el ratón</p>
+        <button class="boton-ejemplo">Pasa el mouse → :hover</button>
+        <p style="margin-top: 1rem;"><strong>:active</strong> → mientras se hace clic</p>
+        <button class="boton-ejemplo">Haz clic (mantén presionado)</button>
+    </section>
+
+    <!-- 2. :focus -->
+    <h3>⌨️ Focus en inputs</h3>
+    <section class="contenedor">
+        <p><strong>:focus</strong> → cuando el campo recibe el foco (tab o clic)</p>
+        <input type="text" class="input-ejemplo" placeholder="Haz clic aquí → focus">
+    </section>
+
+    <!-- 3. :first-child, :last-child, :nth-child -->
+    <h3>📌 Posición entre hermanos</h3>
+    <section class="contenedor">
+        <p><strong>:first-child</strong> (primer elemento) y <strong>:last-child</strong> (último)</p>
+        <ul class="lista-ejemplo" style="margin-left: 1.5rem;">
+            <li>Primer hijo (fondo azul claro)</li>
+            <li>Segundo hijo (color azul por :nth-child(odd))</li>
+            <li>Tercer hijo (color azul también)</li>
+            <li>Último hijo (fondo amarillo)</li>
+        </ul>
+        <p style="margin-top: 1rem;"><strong>:nth-child(even)</strong> → filas pares en tabla</p>
+        <table class="tabla-simple">
+            <tr><th>Nombre</th><th>Edad</th></tr>
+            <tr><td>Ana</td><td>25</td></tr>
+            <tr><td>Luis</td><td>30</td></tr>
+            <tr><td>Marta</td><td>28</td></tr>
+            <tr><td>Pedro</td><td>35</td></tr>
+        </table>
+    </section>
+
+    <!-- 4. :not() -->
+    <h3>🚫 Exclusión con :not()</h3>
+    <section class="contenedor">
+        <div class="parrafos-not">
+            <p>Este párrafo normal (sin clase) → color gris itálico</p>
+            <p class="especial">Este párrafo tiene clase "especial" → fondo gris claro, sin cambios de color</p>
+            <p>Otro párrafo normal → también itálico gris</p>
+        </div>
+        <p style="font-size:0.75rem; margin-top:0.5rem;">* La regla p:not(.especial) aplica estilo a todos los párrafos que NO tienen la clase "especial".</p>
+    </section>
+
+    <!-- 5. :link y :visited -->
+    <h3>🔗 Enlaces visitados y no visitados</h3>
+    <section class="contenedor">
+        <p><strong>:link</strong> → enlace no visitado (azul). <strong>:visited</strong> → enlace ya visitado (morado).</p>
+        <a href="#" class="enlace-ejemplo">Este es un enlace (no visitado aún)</a><br><br>
+        <a href="https://google.com" class="enlace-ejemplo">Google (si lo has visitado, se verá morado)</a>
+        <p style="font-size:0.75rem;">* Los navegadores restringen algunos estilos por seguridad, pero el color básico funciona.</p>
+    </section>
+
+    <!-- 6. Combinaciones y resumen -->
+    <h3>🧩 Ejemplo combinado</h3>
+    <section class="contenedor" style="text-align: center;">
+        <button class="boton-ejemplo" style="margin-right: 1rem;">:hover + :active</button>
+        <input type="text" class="input-ejemplo" placeholder=":focus aquí">
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Prueba a pasar el ratón, hacer clic o tabular entre elementos.</p>
+    </section>
+</main>
+
+</body>
+</html>

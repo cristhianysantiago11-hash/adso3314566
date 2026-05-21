@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-colors-alpha</title>
+    <link rel="stylesheet" href="estylos.css">
+<style>
+        figure.mario {
+            background: url(img/mario.png) 
+                        no-repeat center /cover;
+            border: 4px solid #fff;
+            margin-block: 4rem;
+            height: 380px;
+            width: 380px;
+            div {
+                height: calc(380px/3);
+                &.box1 {
+                    background-color: rgba(0, 0, 0, 0.8);
+
+                }
+                &.box2 {
+                    background-color: #00000077;
+                }
+                &.box3 {
+                    background-color: hsla(0, 100%, 0%, 0.26 );
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#f9f991" viewBox="0 0 256 256">
+            <path d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path>
+        </svg>
+    </a>
+    <main>
+        <header>
+            <h1>12-colors-alpha</h1>
+            <h2>The fourth alpha channel allows you to apply opacity or transparency to the color.</h2>
+            <section>
+                <h3>emple transparent colors</h3>
+                
+                <figure class="mario">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                </figure>
+                
+            </section>
+        </header>
+    </main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-float</title>
+    <link rel="stylesheet" href="estylos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .contenedor-float {
+            background: #2c0338;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .float-left {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .float-right {
+            float: right;
+            margin-left: 20px;
+        }
+
+        .contenedor-float::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        img {
+            width: 150px;
+            display: block;
+            border-radius: 0;
+        }
+
+        p {
+            color: white;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" viewBox="0 0 256 256">
+            <path d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path>
+        </svg>
+    </a>
+
+    <main>
+        <header>
+            <h1>16-float</h1>
+            <h2>Pushes the element to either the left or right side.</h2>
+        </header>
+
+        <h3>📌 emple float left</h3>
+        <section class="contenedor-float">
+            <div class="float-left">
+                <img src="img/mario.png" alt="mario">
+            </div>
+            <p>La imagen flota a la izquierda. El texto fluye a su alrededor. Float left hace que el elemento se vaya a la izquierda y el contenido siguiente lo rodee.</p>
+        </section>
+        <section class="contenedor-float">
+            <div class="float-right">
+                <img src="img/MarioHub_Characters_CharBtn_Luigi_off.png" alt="luigi">
+            </div>
+            <p>La imagen flota a la derecha. El texto fluye a su alrededor. Float right hace que el elemento se vaya a la derecha y el contenido siguiente lo rodee por la izquierda.</p>
+        </section>
+    </main>
+
+</body>
+</html>

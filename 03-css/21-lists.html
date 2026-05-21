@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas en HTML - Ordenadas, desordenadas y definición</title>
+<link rel="stylesheet" href="estylos.css">
+</head>
+<body>
+
+<main>
+    <header>
+        <h1>📋 21 - Listas en HTML</h1>
+        <h2>Listas ordenadas (&lt;ol&gt;), desordenadas (&lt;ul&gt;) y de definición (&lt;dl&gt;)</h2>
+    </header>
+
+    <!-- LISTAS DESORDENADAS (ul) -->
+    <h3>🔘 Lista desordenada (&lt;ul&gt;)</h3>
+    <section class="contenedor">
+        <p>Por defecto, los elementos se muestran con viñeta de disco.</p>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+        </ul>
+
+        <p><strong>Con anidación correcta</strong> (sublista dentro de un elemento &lt;li&gt;):</p>
+        <ul>
+            <li>
+                Python
+                <ul class="sublista">
+                    <li>Flask</li>
+                    <li>Django</li>
+                </ul>
+            </li>
+            <li>Java</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <p><strong>Cambiando el tipo de viñeta:</strong></p>
+        <ul class="circulo">
+            <li>Viñeta círculo (list-style-type: circle)</li>
+            <li>Segundo elemento</li>
+        </ul>
+        <ul class="cuadrado">
+            <li>Viñeta cuadrada (list-style-type: square)</li>
+            <li>Segundo elemento</li>
+        </ul>
+    </section>
+
+    <!-- LISTAS ORDENADAS (ol) -->
+    <h3>🔢 Lista ordenada (&lt;ol&gt;)</h3>
+    <section class="contenedor">
+        <p>Por defecto, números decimales (1, 2, 3...).</p>
+        <ol>
+            <li>Jujutsu Kaisen</li>
+            <li>Frieren</li>
+            <li>Hell's Paradise</li>
+            <li>Journey with a Witch</li>
+        </ol>
+
+        <p><strong>Con anidación y tipo de letra "a":</strong></p>
+        <ol type="a">
+            <li>Jujutsu Kaisen
+                <ol type="a" style="margin-top: 0.5rem;">
+                    <li>Itadori</li>
+                    <li>Gojo</li>
+                    <li>Toji</li>
+                </ol>
+            </li>
+            <li>Frieren</li>
+            <li>Hell's Paradise</li>
+        </ol>
+
+        <p><strong>Otros tipos de numeración:</strong></p>
+        <ol type="A">
+            <li>Mayúsculas (A, B, C...)</li>
+            <li>Segundo elemento</li>
+        </ol>
+        <ol type="i">
+            <li>Romanos minúsculas (i, ii, iii...)</li>
+            <li>Segundo elemento</li>
+        </ol>
+        <ol class="romano">
+            <li>Romanos mayúsculas con CSS (upper-roman)</li>
+            <li>Segundo elemento</li>
+        </ol>
+        <ol class="griego">
+            <li>Letras griegas (α, β, γ...)</li>
+            <li>No todos los navegadores lo soportan</li>
+        </ol>
+    </section>
+
+    <!-- LISTA DE DEFINICIÓN (dl) -->
+    <h3>📖 Lista de definición (&lt;dl&gt;)</h3>
+    <section class="contenedor">
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado para estructurar contenido web.</dd>
+            
+            <dt>CSS</dt>
+            <dd>Lenguaje de estilos para diseñar páginas web.</dd>
+            
+            <dt>JavaScript</dt>
+            <dd>Lenguaje de programación para añadir interactividad.</dd>
+        </dl>
+        <p>Se compone de &lt;dt&gt; (término) y &lt;dd&gt; (definición o descripción).</p>
+    </section>
+
+    <!-- COMBINACIÓN DE LISTAS -->
+    <h3>🧩 Anidación mixta (ul dentro de ol, etc.)</h3>
+    <section class="contenedor">
+        <ol>
+            <li>Idiomas de programación
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+            <li>Frameworks
+                <ul>
+                    <li>Django</li>
+                    <li>React</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+</main>
+
+</body>
+</html>

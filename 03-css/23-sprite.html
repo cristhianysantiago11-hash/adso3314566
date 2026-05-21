@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23 - Sprite Animation</title>
+    <link rel="stylesheet" href="estylos.css">
+    <style>
+        div#sprite {
+            background: url('img/anim-sprite.png') no-repeat;
+            height: 600px;
+            margin: 1rem auto;
+            width: 600px;
+        }
+
+        div#sprite.sp1 {
+            background-position: calc(-256px * 0) 0;
+        }
+        div#sprite.sp2 {
+            background-position: calc(-256px * 1) 0;
+        }
+        div#sprite.sp3 {
+            background-position: calc(-256px * 2) 0;
+        }
+        div#sprite.sp4 {
+            background-position: calc(-256px * 3) 0;
+        }
+        div#sprite.sp5 {
+            background-position: calc(-256px * 4) 0;
+        }
+        div#sprite.sp6 {
+            background-position: calc(-256px * 5) 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="contenedor-botones">
+            <a href="index.html" class="boton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000" viewBox="0 0 256 256">
+                    <path
+                        d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
+                    </path>
+                </svg>
+            </a>
+        
+        </div>
+        <br><br>
+
+        <header>
+            <h1>23 - Sprite Animation</h1>
+            <h2>This way we can include CSS within the style tag, it is very useful when you only have an html document.
+            </h2>
+        </header>
+
+        <br>
+
+        <section class="caja-negra-individual">
+            <h3>runner</h3>
+            <div id="sprite" class="sp1"></div>
+            <h3></h3>
+        </section>
+    </main>
+    <script>
+        const sprite = document.getElementById('sprite')
+        const numSprite = 6
+        let count = 1
+        setInterval(() => {
+            sprite.className = ''
+            sprite.classList.add('sp'+count)
+            if(count == numSprite) 
+            count = 1
+            else count++
+        }, 100)
+
+    </script>
+</body>
+
+</html>

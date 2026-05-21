@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17-visualization</title>
+    <link rel="stylesheet" href="estylos.css">
+    <style>
+
+        .contenedor {
+            background: #2c0338;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .caja {
+            width: 150px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h2 {
+            color: #ccc;
+            font-weight: normal;
+            font-size: 0.9rem;
+        }
+
+        h3 {
+            color: white;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            color: white;
+            margin: 10px 0;
+        }
+
+        /* DISPLAY */
+        .display-block {
+            background: #4ecdc4;
+            display: block;
+        }
+
+        .display-inline {
+            background: #ff6b6b;
+            display: inline;
+        }
+
+        .display-none {
+            background: #ffe66d;
+            display: none;
+        }
+
+        /* VISIBILITY */
+        .visibility-visible {
+            background: #95e77e;
+            visibility: visible;
+        }
+
+        .visibility-hidden {
+            background: #ff9f43;
+            visibility: hidden;
+        }
+
+        /* OVERFLOW */
+        .overflow-box {
+            background: #a855f7;
+            width: 200px;
+            height: 80px;
+            padding: 10px;
+            color: white;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+
+        .overflow-visible { overflow: visible; }
+        .overflow-hidden { overflow: hidden; }
+        .overflow-scroll { overflow: scroll; }
+        .overflow-auto { overflow: auto; }
+
+        .zindex-contenedor {
+            position: relative;
+            height: 150px;
+        }
+
+        .zindex-caja {
+            position: absolute;
+            width: 120px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .zindex-1 {
+            background: #ff6b6b;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+        }
+
+        .zindex-2 {
+            background: #4ecdc4;
+            top: 40px;
+            left: 40px;
+            z-index: 2;
+        }
+
+        .zindex-3 {
+            background: #a855f7;
+            top: 70px;
+            left: 70px;
+            z-index: 3;
+        }
+
+        .inline-ejemplo {
+            background: #ff6b6b;
+            width: 100px;
+            height: 80px;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#fff" viewBox="0 0 256 256">
+            <path d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path>
+        </svg>
+    </a>
+
+    <main>
+        <header>
+            <h1>17-visualization</h1>
+            <h2>Display | Visibility | Overflow | Z-Index</h2>
+        </header>
+
+        <!-- DISPLAY -->
+        <h3>DISPLAY</h3>
+        <section class="contenedor">
+            <p>display: block → ocupa todo el ancho</p>
+            <div class="caja display-block">BLOCK</div>
+            
+            <p>display: inline → no respeta ancho/alto</p>
+            <div class="caja display-inline">INLINE</div>
+            <div class="caja display-inline">INLINE</div>
+            
+            <p>display: none → desaparece (no se ve)</p>
+            <div class="caja display-none">NONE</div>
+        </section>
+
+        <!-- VISIBILITY -->
+        <h3> VISIBILITY</h3>
+        <section class="contenedor">
+            <p>visibility: visible → se ve normal</p>
+            <div class="caja visibility-visible">VISIBLE</div>
+            
+            <p>visibility: hidden → ocupa espacio pero no se ve</p>
+            <div class="caja visibility-hidden">HIDDEN</div>
+            <div class="caja visibility-visible">VISIBLE</div>
+        </section>
+
+        <!-- OVERFLOW -->
+        <h3> OVERFLOW</h3>
+        <section class="contenedor">
+            <p>overflow: visible → se desborda</p>
+            <div class="overflow-box overflow-visible">
+                Texto muy largo que se desborda de la caja
+            </div>
+            <div class="overflow-box overflow-hidden">
+                Texto muy largo que se desborda de la caja
+            </div>
+            
+            <div class="overflow-box overflow-scroll">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam modi soluta ullam officia doloremque maiores iste porro, aliquid minus minima vero ipsam quas, temporibus, saepe explicabo recusandae laborum architecto. Distinctio.
+            </div>
+        
+            <div class="overflow-box overflow-auto">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam temporibus, quidem qui aliquam maxime at veritatis, repellat id harum, laboriosam pariatur ducimus blanditiis! Pariatur, repudiandae doloribus! Omnis beatae pariatur libero.
+            </div>
+        </section>
+
+        <!-- Z-INDEX -->
+        <h3> Z-INDEX</h3>
+        <section class="contenedor">
+            <p>z-index: mayor número = más arriba</p>
+            <div class="zindex-contenedor">
+                <div class="zindex-caja zindex-1">z-index:1</div>
+                <div class="zindex-caja zindex-2">z-index:2</div>
+                <div class="zindex-caja zindex-3">z-index:3</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

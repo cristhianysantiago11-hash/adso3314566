@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de Texto en CSS - Ejemplos básicos</title>
+    <link rel="stylesheet" href="estylos.css">
+    <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#f9f991" viewBox="0 0 256 256">
+                <path
+                    d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
+                </path>
+            </svg>
+        </a>
+    
+</head>
+<body>
+
+<main>
+    <header>
+        <h1> Propiedades de Texto en CSS</h1>
+        <h2>text-indent | white-space | word-break | text-overflow | direction | text-shadow</h2>
+    </header>
+
+    <!-- 1. Sangría (text-indent) -->
+    <h3> Sangría en la primera línea</h3>
+    <section class="contenedor">
+        <div class="demo-box sangria">
+            Este párrafo tiene una sangría de 2rem en la primera línea. Es útil para simular la indentación de los libros o documentos formales.
+        </div>
+        <div class="demo-box">
+            Este párrafo normal no tiene sangría, para comparar.
+        </div>
+    </section>
+
+    <!-- 2. Espacio en blanco (white-space) -->
+    <h3> Espacio en blanco (white-space)</h3>
+    <section class="contenedor">
+        <div class="demo-box espacio-normal">
+            white-space: normal → los espacios   múltiples   se colapsan y el texto se ajusta.
+        </div>
+        <div class="demo-box espacio-pre">
+            white-space: pre → respeta   los espacios   y saltos
+            de línea.
+        </div>
+        <div class="demo-box espacio-nowrap">
+            white-space: nowrap → el texto no se quiebra y puede desbordar horizontalmente (usa scroll si es necesario).
+        </div>
+    </section>
+
+    <!-- 3. Corte de palabras (word-break) -->
+    <h3> Corte de palabras (word-break)</h3>
+    <section class="contenedor">
+        <div class="demo-box cortar-normal" style="width: 180px;">
+            word-break: normal → Palabralarguisimasextranormal no se corta y desborda.
+        </div>
+        <div class="demo-box cortar-palabras" style="width: 180px;">
+            word-break: break-all → Palabralarguisimasextranormal se corta en cualquier punto.
+        </div>
+    </section>
+
+    <!-- 4. Desbordamiento de texto (text-overflow) -->
+    <h3> Desbordamiento con puntos suspensivos</h3>
+    <section class="contenedor">
+        <div class="demo-box desborde-ellipsis">
+            Este texto es muy largo y se cortará con puntos suspensivos.
+        </div>
+        <div class="demo-box desborde-clip">
+            Este texto es muy largo y se cortará sin puntos (clip).
+        </div>
+        <p style="font-size:0.75rem;">* Requiere white-space: nowrap y overflow: hidden</p>
+    </section>
+
+    <!-- 5. Dirección del texto (direction) -->
+    <h3> Dirección de izquierda a derecha / derecha a izquierda</h3>
+    <section class="contenedor">
+        <div class="demo-box">
+            Normal (ltr): Texto de izquierda a derecha.
+        </div>
+        <div class="demo-box direccion-rtl">
+            direction: rtl → Texto de derecha a izquierda (útil para idiomas como árabe o hebreo).
+        </div>
+    </section>
+
+    <!-- 6. Sombra de texto (sencilla) -->
+    <h3> Sombra de texto</h3>
+    <section class="contenedor">
+        <div class="demo-box sombra-texto">
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.1) → sombra sutil.
+        </div>
+    </section>
+
+    <!-- 7. Combinación de varias propiedades -->
+    <h3> Ejemplo combinado</h3>
+    <section class="contenedor" style="text-align: center;">
+        <p class="sangria" style="font-style: italic; color: #2c3e66;">
+            Sangría, color azulado y cursiva.
+        </p>
+        <p class="desborde-ellipsis" style="margin: 0 auto;">
+            Texto largo con puntos suspensivos y centrado.
+        </p>
+    </section>
+</main>
+
+</body>
+</html>

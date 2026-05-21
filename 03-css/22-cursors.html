@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22 - Cursor</title>
+    <link rel="stylesheet" href="estylos.css">
+
+    <style>
+        .cursor-demo {
+            font-family: "Roboto Slab", serif;
+        }
+
+        .demo-block {
+            background: #1a1a1a;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            transition: 0.3s ease;
+        }
+
+        .demo-block:hover {
+            transform: translateX(5px);
+        }
+
+        .demo-title {
+            color: #bb4dff;
+            font-size: 1rem;
+            margin-bottom: 6px;
+            border-left: 3px solid #bb4dff;
+            padding-left: 10px;
+        }
+
+        .demo-desc {
+            color: #999;
+            font-size: 0.75rem;
+            margin-bottom: 12px;
+            padding-left: 13px;
+        }
+
+        .demo-content {
+            background: #0a0a0a;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+        }
+
+        code {
+            background: #2a2a2a;
+            color: #bb4dff;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-family: monospace;
+        }
+
+        .cursor-box {
+            background: #111;
+            border: 2px solid #bb4dff55;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s ease;
+            color: white;
+        }
+
+        .cursor-box:hover {
+            border-color: #bb4dff;
+            background: #1d1d1d;
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+
+        .crosshair {
+            cursor: crosshair;
+        }
+
+        .move {
+            cursor: move;
+        }
+
+        .text {
+            cursor: text;
+        }
+
+        .wait {
+            cursor: wait;
+        }
+
+        .not-allowed {
+            cursor: not-allowed;
+        }
+
+        .help {
+            cursor: help;
+        }
+
+        .grab {
+            cursor: grab;
+        }
+
+        .custom-cursor {
+            cursor: url('https://cdn.cursors-4u.net/previews/dragonica-purple-star-glove-pointer-6061d1c3-32.webp') 32 32, auto !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="contenedor-botones">
+
+            <a href="../03-css/index3.html" class="boton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000"
+                    viewBox="0 0 256 256">
+                    <path
+                        d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
+                    </path>
+                </svg>
+            </a>
+
+            <a href="../index.html" class="boton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                    viewBox="0 0 256 256">
+                    <path
+                        d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z">
+                    </path>
+                </svg>
+            </a>
+
+        </div>
+
+        <br><br>
+
+        <header>
+            <h1>22 - Cursor</h1>
+            <h2>La propiedad cursor cambia el tipo de puntero del mouse.</h2>
+        </header>
+
+        <!-- POINTER -->
+
+        <div class="caja-negra-individual">
+
+            <h3>Pointer</h3>
+
+            <p class="section-desc">
+                Se usa normalmente en botones y enlaces.
+            </p>
+
+            <div class="cursor-demo">
+
+                <div class="demo-block">
+
+                    <div class="demo-title">
+                        Pointer
+                        <code>cursor: pointer;</code>
+                    </div>
+
+                    <div class="demo-desc">
+                        Muestra una mano al pasar el mouse.
+                    </div>
+
+                    <div class="demo-content">
+
+                        <div class="cursor-box pointer">
+                            Pasa el mouse aquí
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CROSSHAIR -->
+
+        <div class="caja-negra-individual">
+
+            <h3>Crosshair</h3>
+
+            <p class="section-desc">
+                Muestra un cursor en forma de cruz.
+            </p>
+
+            <div class="cursor-demo">
+
+                <div class="demo-block">
+
+                    <div class="demo-title">
+                        Crosshair
+                        <code>cursor: crosshair;</code>
+                    </div>
+
+                    <div class="demo-desc">
+                        Muy usado en herramientas de precisión.
+                    </div>
+
+                    <div class="demo-content">
+
+                        <div class="cursor-box crosshair">
+                            Cursor tipo cruz
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- MOVE -->
+
+        <div class="caja-negra-individual">
+
+            <h3>Move</h3>
+
+            <p class="section-desc">
+                Indica que un elemento puede moverse.
+            </p>
+
+            <div class="cursor-demo">
+
+                <div class="demo-block">
+
+                    <div class="demo-title">
+                        Move
+                        <code>cursor: move;</code>
+                    </div>
+
+                    <div class="demo-desc">
+                        Cursor de movimiento.
+                    </div>
+
+                    <div class="demo-content">
+
+                        <div class="cursor-box move">
+                            Cursor move
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TEXT -->
+
+        <div class="caja-negra-individual">
+
+            <h3>Text</h3>
+
+            <p class="section-desc">
+                Se usa en campos de texto.
+            </p>
+
+            <div class="cursor-demo">
+
+                <div class="demo-block">
+
+                    <div class="demo-title">
+                        Text
+                        <code>cursor: text;</code>
+                    </div>
+
+                    <div class="demo-desc">
+                        Cursor para escribir texto.
+                    </div>
+
+                    <div class="demo-content">
+
+                        <div class="cursor-box text">
+                            Cursor text
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- WAIT -->
+
+        <div class="caja-negra-individual">
+
+            <h3>Wait</h3>
+
+            <p class="section-desc">
+                Indica que el sistema está cargando.
+            </p>
+
+            <div class="cursor-demo">
+
+                <div class="demo-block">
+
+                    <div class="demo-title">
+                        Wait
+                        <code>cursor: wait;</code>
+                    </div>
+
+                    <div class="demo-desc">
+                        Cursor de espera.
+                    </div>
+
+                    <div class="demo-content">
+
+                        <div class="cursor-box wait">
+                            Cursor wait
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- NOT ALLOWED -->
+
+        <div class="caja-negra-individual">
+
+            <h3>Not Allowed</h3>
+
+            <p class="section-desc">
+                Indica que una acción no está permitida.
+            </p>
+
+            <div class="cursor-demo">
+
+                <div class="demo-block">
+
+                    <div class="demo-title">
+                        Not Allowed
+                        <code>cursor: not-allowed;</code>
+                    </div>
+
+                    <div class="demo-desc">
+                        Cursor de prohibido.
+                    </div>
+
+                    <div class="demo-content">
+
+                        <div class="cursor-box not-allowed">
+                            Acción no permitida
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- HELP -->
+
+        <div class="caja-negra-individual">
+
+            <h3>Help</h3>
+
+            <p class="section-desc">
+                Indica ayuda o información.
+            </p>
+
+            <div class="cursor-demo">
+
+                <div class="demo-block">
+
+                    <div class="demo-title">
+                        Help
+                        <code>cursor: help;</code>
+                    </div>
+
+                    <div class="demo-desc">
+                        Cursor de ayuda.
+                    </div>
+
+                    <div class="demo-content">
+
+                        <div class="cursor-box help">
+                            Cursor help
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- GRAB -->
+
+        <div class="caja-negra-individual">
+
+            <h3>Grab</h3>
+
+            <p class="section-desc">
+                Simula agarrar un elemento.
+            </p>
+
+            <div class="cursor-demo">
+
+                <div class="demo-block">
+
+                    <div class="demo-title">
+                        Grab
+                        <code>cursor: grab;</code>
+                    </div>
+
+                    <div class="demo-desc">
+                        Cursor tipo mano de agarre.
+                    </div>
+
+                    <div class="demo-content">
+
+                        <div class="cursor-box grab">
+                            Cursor grab
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CUSTOM CURSOR -->
+
+        <div class="caja-negra-individual">
+
+            <h3>Custom Cursor</h3>
+
+            <p class="section-desc">
+                También se puede usar una imagen personalizada como cursor.
+            </p>
+
+            <div class="cursor-demo">
+
+                <div class="demo-block">
+
+                    <div class="demo-title">
+                        Custom Cursor
+                        <code>cursor: url(...), auto;</code>
+                    </div>
+
+                    <div class="demo-desc">
+                        Este cursor usa una espada personalizada.
+                    </div>
+
+                    <div class="demo-content">
+
+                        <div class="cursor-box custom-cursor">
+                            Pasa el mouse aquí 
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
