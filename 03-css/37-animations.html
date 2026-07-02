@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37-animations</title>
+    <link rel="stylesheet" href="./estylos.css">
+    <style>
+        main section {
+            div.jungle {
+                background: url(/src/imgs/jungle.png) no repeat center;
+                border-radius: 4px;
+                margin-block: 2rem;
+                position: relative;
+                height: 471px;
+                width: 380px;
+                img {
+                    border-radius: 0%;
+                    border: none;
+                    position: absolute;
+                }
+                img.logo {
+                    top: 35px;
+                    left: 30px;
+                    height: 72px;
+                    object-fit: contain;
+                    z-index: 9;
+                    width: 417px;
+                    animation: 1s animation ease-in infinite;
+                }
+                img.DK {
+                    top :120px;
+                    left: 120px;
+                    width: 140px;
+                    object-fit: contain;
+                    z-index: 8;
+                    animation:2s animDK ease-out infinite;
+
+
+                }
+                div.move {
+                    position: absolute;
+                    top: 240px;
+                    left: 0;
+                    img.ryno {
+                        width: 140px;
+                        object-fit: contain;
+                        top: 0;
+                        animation: 0.4s animRYNO linear infinite;
+                    }
+                }
+                }
+            }
+        @keyframes animlogo {
+            0%, 100% {
+                tranform:scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+        @keyframes animDK {
+            0% {top: 130px; transform: rotatex(0deg)};
+            40% {top: 80px; transform: rotatex(0deg)};
+            5% {top: 80px; transform: rotatex(360deg)};
+            60% {top: 80px; transform: rotatex(360deg)};
+            100% {top: 130px; transform: rotatex(360deg)};
+        }
+        @keyframes animRYNO {
+            0% {
+                left: 0px;
+                transform: rotate(0deg);
+            }
+            45% {
+                left: 120px;
+                transform: rotate(0deg);
+            }
+            50% {
+                left: 145px;
+                transform: rotate(-20deg);
+            }
+            
+
+        }
+        
+    </style>
+</head>
+<body class="css">
+    <a href="/03-css/index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffff" viewBox="0 0 256 256">
+            <path d="M232,200a8,8,0,0,1-16,0,88.1,88.1,0,0,0-88-88H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,85.66,61.66L51.31,96H128A104.11,104.11,0,0,1,232,200Z">
+            </path>
+        </svg>
+    </a>
+    <main>
+        <header>
+            <h1>37-animations</h1>
+            <h2>Defines visual effects (like blur and saturation).</h2>
+        </header>
+        <section>
+            <div class="jungle">
+                <img src="/src/imgs/logo-dk.png" alt="" class="logo">
+                <img src="/src/imgs/dk.png" alt=""class ="DK" >
+                <div class="move">
+                    <img src="/src/imgs/ryno.png" alt="" class="rino">
+                </div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>

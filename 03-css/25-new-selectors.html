@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>00-Title</title>
+    <link rel="stylesheet" href="estylos.css">
+
+    <style>
+
+        .first-child h3:first-child{
+            color: red;
+        }
+
+        .last-child h3:last-child{
+            color: blue;
+        }
+
+        .nth-child h3:nth-child(2){
+            color: green;
+        }
+
+        .first-of-type p:first-of-type{
+            background: yellow;
+        }
+
+        .last-of-type p:last-of-type{
+            background: orange;
+        }
+
+        .nth-of-type p:nth-of-type(2){
+            background: purple;
+            color: white;
+        }
+
+        :target{
+            background: crimson;
+            color: white;
+        }
+
+        ::selection{
+            background: black;
+            color: white;
+        }
+
+        .chessboard{
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .chessboard td{
+            width: 60px;
+            height: 60px;
+        }
+
+        .chessboard tr:nth-child(odd) td:nth-child(even),
+        .chessboard tr:nth-child(even) td:nth-child(odd){
+            background: black;
+        }
+
+        .chessboard tr:nth-child(odd) td:nth-child(odd),
+        .chessboard tr:nth-child(even) td:nth-child(even){
+            background: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <a href="/03-css/index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffff" viewBox="0 0 256 256">
+            <path d="M232,200a8,8,0,0,1-16,0,88.1,88.1,0,0,0-88-88H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,85.66,61.66L51.31,96H128A104.11,104.11,0,0,1,232,200Z">
+            </path>
+        </svg>
+    </a>
+
+    <main>
+
+        <header>
+            <h1>Pseudo Classes</h1>
+            <br>
+            <h2>Examples</h2>
+        </header>
+
+        <section class="first-child">
+
+            <h3>First-Child</h3>
+            <h3>Other Child</h3>
+
+        </section>
+
+        <section class="last-child">
+
+            <h3>Other Child</h3>
+            <h3>Last-Child</h3>
+
+        </section>
+
+        <section class="nth-child">
+
+            <h3>Child 1</h3>
+            <h3>Child 2</h3>
+            <h3>Child 3</h3>
+
+        </section>
+
+        <section class="first-of-type">
+
+            <p>First Of Type</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+
+        </section>
+
+        <section class="last-of-type">
+
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Last Of Type</p>
+
+        </section>
+
+        <section class="nth-of-type">
+
+            <p>Paragraph 1</p>
+            <p>Nth Of Type</p>
+            <p>Paragraph 3</p>
+
+        </section>
+
+        <section>
+
+            <a href="#target-element">
+                Go To Target
+            </a>
+
+        </section>
+
+        <section id="target-element">
+
+            <h3>Target Element</h3>
+
+        </section>
+
+        <section>
+
+            <p>
+                Select this text to see the ::selection effect.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h3>Challenge</h3>
+
+            <table class="chessboard">
+
+                <tr>
+                    <td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td>
+                </tr>
+
+                <tr>
+                    <td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td>
+                </tr>
+
+                <tr>
+                    <td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td>
+                </tr>
+
+                <tr>
+                    <td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td>
+                </tr>
+
+                <tr>
+                    <td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td>
+                </tr>
+
+                <tr>
+                    <td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td>
+                </tr>
+
+                <tr>
+                    <td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td>
+                </tr>
+
+                <tr>
+                    <td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

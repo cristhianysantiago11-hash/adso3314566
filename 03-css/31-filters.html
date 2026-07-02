@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31-filters</title>
+    <link rel="stylesheet" href="./estylos.css">
+    <style>
+        img.filter {
+            display: block;
+            margin-inline: auto;
+            transition: all 0.6s ease-in;
+            width: 160px;
+        }
+        img.filter:hover {
+            filter: none;
+        }
+        img.filter1 {
+            filter: grayscale(1);
+        }
+        img.filter2 {
+            filter: blur(6px);
+        }
+        img.filter3 {
+            filter: sepia(1);
+        }
+        img.filter4 {
+            filter: brightness(50%);
+        }
+        img.filter5 {
+            filter: invert(1);
+        }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" viewBox="0 0 256 256">
+            <path d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path>
+        </svg>
+    </a>
+    <main>
+        <header>
+            <h1>31-filters</h1>
+            <h2>Defines visual effects (like blur and saturation).</h2>
+        </header>
+        <section>
+            <h3>GrayScale</h3>
+            <img class="filter filter1" src="../src/imgs/goku1-removebg-preview.png" alt="goku">
+            <h3>Blur</h3>
+            <img class="filter filter2" src="../src/imgs/goku1-removebg-preview.png" alt="goku">
+            <h3>Sepia</h3>
+            <img class="filter filter3" src="../src/imgs/goku1-removebg-preview.png" alt="goku">
+            <h3>Brightness</h3>
+            <img class="filter filter4" src="../src/imgs/goku1-removebg-preview.png" alt="goku">
+            <h3>Invert</h3>
+            <img class="filter filter5" src="../src/imgs/goku1-removebg-preview.png" alt="goku">
+        </section>
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>38-Media Queries</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Federant&family=Lobster&family=Playwrite+CU+Guides&family=Roboto:ital,wdth,wght@0,99.7,300;1,99.7,300&display=swap');
+        * {
+            transition: all 0.5s ease-in;
+        }
+        body {
+            font-family: sans-serif;
+            background-color: #003675;
+            color: #fff;
+            main {
+                padding: 4rem;
+                header {
+                    figure.logo {
+                        background: url(/src/imgs/pepsi01.png) no-repeat center;
+                        height: 354px;
+                        margin: 0 auto;
+                        width: 919px;
+                    }
+                }
+                section {
+                    h1 {
+                        text-align: center;
+                        font-size: 4rem;
+                        span.md, span.sm {
+                            display: none;
+                        }
+                    }
+                    p {
+                        margin-block: 4rem;
+                        text-align: justify;
+                        line-height: 2rem;
+                    }
+                }
+            }
+        }
+        /* Break Points */
+        @media (max-width: 1024px) {
+            body main {
+                header {
+                    figure.logo {
+                        background: url(/src/imgs/pepsi02.png) no-repeat center;
+                        height: 354px;
+                        width: 919px;
+                    }
+                }
+                section {
+                    h1 {
+                        font-size: 3rem;
+                        span.lg, span.sm {
+                            display: none;
+                        }
+                        span.md {
+                            display: inline;
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 728px) {
+            body main {
+                header {
+                    figure.logo {
+                        background: url(/src/imgs/pepsi03.png) no-repeat center;
+                        height: 156px;
+                        width: 162px;
+                    }
+                }
+                section {
+                    h1 {
+                        font-size: 1.2rem;
+                        span.lg, span.md {
+                            display: none;
+                        }
+                        span.sm {
+                            display: inline;
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <figure class="logo"></figure>
+        </header>
+        <section>
+            <h1>
+                Media Queries:
+                <span class="lg"> (> 1024px) 💻Desktop </span>
+                <span class="md"> (> 1024px) 📲Tablet </span>
+                <span class="sm"> (> 780px) 📱Mobile </span>
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores alias iste expedita rerum distinctio. Assumenda minima sequi, numquam quibusdam accusantium delectus ipsum, fugiat qui nobis a ipsa vel incidunt, eius similique quam iusto molestiae aperiam facilis architecto pariatur obcaecati ad corporis ipsam itaque. Quaerat cum architecto alias asperiores neque dolores, ducimus error odio non? Unde ut ducimus officiis, voluptatibus consectetur, iusto illo autem alias maxime nemo eaque dolor. Ratione iste quae atque repudiandae nulla distinctio a ea perspiciatis aspernatur id, veritatis numquam quaerat? Dignissimos illo omnis voluptatum deleniti quibusdam sit doloremque repellendus quam labore suscipit expedita iure, aliquam distinctio eius odio ipsam id? A, impedit nulla, quam laboriosam temporibus ipsa possimus dicta non iure ex corrupti facere quas, cumque beatae.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

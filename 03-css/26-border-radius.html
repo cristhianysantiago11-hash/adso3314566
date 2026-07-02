@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26-border-radius</title>
+    <link rel="stylesheet" href="estylos.css">
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .figura {
+            width: 150px;
+            height: 150px;
+            background: #131313;
+            margin: 20px;
+        }
+
+        .redondo {
+            border-radius: 50%;
+        }
+
+        .pildora {
+            border-radius: 75px;
+        }
+
+        .esquina-dif {
+            border-radius: 0 50px 0 50px;
+        }
+
+        .rombo {
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+    </style>
+
+<body>
+    <main>
+        <div class="contenedor-botones">
+            <a href="index.html" class="boton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000" viewBox="0 0 256 256">
+                    <path
+                        d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z">
+                    </path>
+                </svg>
+            </a>
+
+        </div>
+        <br><br>
+
+        <header>
+            <h1>26-border-radius</h1>
+            <h2>.
+            </h2>
+        </header>
+
+        <br>
+
+        <body>
+            <div class="container">
+                <div class="figura redondo"></div>
+                <div class="figura pildora"></div>
+                <div class="figura esquina-dif"></div>
+                <div class="figura rombo"></div>
+            </div>
+        </body>
+</body>
+
+</html>

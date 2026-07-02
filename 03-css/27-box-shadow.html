@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27-box-shadow</title>
+    <link rel="stylesheet" href="estylos.css">
+    <style>
+
+
+        .contenedor-botones {
+            margin-bottom: 20px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .boton:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilos para las cajas */
+        .box {
+            width: 200px;
+            height: 200px;
+            background: #0e0e0e;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        /* Sombras para cada caja */
+        .box1 {
+            box-shadow: 0 0 12px #fff;
+        }
+
+        .box2 {
+            box-shadow: -10px -10px 24px 0 #fff;
+        }
+
+        .box3 {
+            box-shadow: 0 0 20px #fff inset;
+        }
+
+        .box4 {
+            box-shadow: 4px 4px 0 4px #cc0,
+                        8px 8px 0 6px #00c,
+                        12px 12px 0 8px #c00;
+        }
+
+        /* Contenedor de imágenes */
+        .imagenes {
+            display: flex;
+            justify-content: center;
+            margin-block: 2rem;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        /* Estilos para imágenes con diferentes sombras */
+        .img-shadow {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .img-shadow:hover {
+            transform: scale(1.05);
+        }
+
+        /* Box-shadow en imágenes */
+        .img-box-shadow {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Drop-shadow en imágenes (filtro) */
+        .img-drop-shadow {
+        filter: drop-shadow(20px 20px 30px rgba(255, 0, 0, 0.7));
+        }
+
+        /* Sombra combinada */
+        .img-combinada {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+        }
+
+        /* Sombra azul brillante */
+        .img-brillante {
+            box-shadow: 0 0 20px #00f, 0 0 40px #0ff;
+        }
+
+        /* Títulos explicativos */
+        .img-titulo {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .imagen-item {
+            text-align: center;
+        }
+
+        section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            color: #fff;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="contenedor-botones">
+            <a href="index.html" class="boton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000" viewBox="0 0 256 256">
+                    <path d="M232,56A104.11,104.11,0,0,1,128,160H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48a8,8,0,0,1,11.32,11.32L51.31,144H128a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path>
+                </svg>
+            </a>
+        </div>
+        <br><br>
+
+        <header>
+            <h1>27-box-shadow</h1>
+        </header>
+
+        <section>
+            <h3>box-shadow: 0 0 12px #fff</h3>
+            <div class="box box1"></div>
+            
+            <h3>box-shadow: -10px -10px 24px 0 #fff</h3>
+            <div class="box box2"></div>
+            
+            <h3>box-shadow: 0 0 20px #fff inset</h3>
+            <div class="box box3"></div>
+            
+            <h3>box-shadow: múltiples sombras</h3>
+            <div class="box box4"></div>
+            
+            <h3>box-shadow VS drop-shadow()</h3>
+            <img src="img/mario.png" class="img-shadow img-box-shadow">
+            <img src="img/mario.png" class="img-shadow img-drop-shadow">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

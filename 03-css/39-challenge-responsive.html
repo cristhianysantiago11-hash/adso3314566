@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="estylos.css">
+    <style>
+        * {
+            transition: all 0.2s ease-in;
+        }
+
+        header {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 2rem auto;
+            padding: 1rem;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        body {
+            background: black;
+            font-family: sans-serif;
+        }
+
+        .container1 {
+            background-color: #999;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 850px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .box {
+            background: #0009;
+            height: 200px;
+            width: 200px;
+        }
+
+        .box img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container2 {
+            background-color: #999;
+            display: flex;
+            flex-direction: row wrap;
+            align-items: center;
+            gap: 1rem;
+
+            width: 850px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .container2 texto {
+            object-fit: cover;
+            width: 100px;
+            height: 100px;
+            justify-content: space-around;
+            align-items: center;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .vox {
+            background: #0009;
+            height: 200px;
+            width: 200px;
+            aspect-ratio: 1/1;
+        }
+
+        .vox img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 860px) {
+            .container1 {
+                width: 500px;
+            }
+
+            .container2 {
+                width: 500px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container1 {
+                width: 400px;
+            }
+
+            .container2 {
+                flex-direction: column;
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.OuDTrqOHtYl9EEYVUdHZSAHaB7&pid=Api" alt="" />
+    </header>
+    <div class="container1">
+        <div class="box">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/060/901/393/large/orhun-eren-cengiz-eldenring-copy.jpg?1679564461"
+                alt="" />
+        </div>
+        <div class="box">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.Av6y3l_1tdx6vOA7kBOyEAHaDt&pid=Api" alt="" />
+        </div>
+        <div class="box">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.bpeuzKThsJIBtcIlOJsctQHaE8&pid=Api" alt="" />
+        </div>
+        <div class="box">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.SD-H-ho-HXvsPf_Uy4NQpwHaLG&pid=Api" alt="" />
+        </div>
+    </div>
+    <div class="container2">
+        <div class="vox">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.YYUOG4uVT_IsUkHsyKAIFgHaFY&pid=Api" alt="" />
+        </div>
+        <div class="texto">
+            <h2>texto</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+                explicabo? Ratione enim repellendus quia sit eaque hic tempora? Saepe
+                inventore excepturi quam nihil? Velit nam nesciunt et delectus,
+                voluptate cum!
+            </p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="vox">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.NpkpFjpQELqFJ75bATEJ4gHaLH&pid=Api" alt="" />
+        </div>
+        <div class="texto">
+            <h2>texto</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+                explicabo? Ratione enim repellendus quia sit eaque hic tempora? Saepe
+                inventore excepturi quam nihil? Velit nam nesciunt et delectus,
+                voluptate cum!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
