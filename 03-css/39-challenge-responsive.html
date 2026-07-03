@@ -1,164 +1,503 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="estylos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer Responsive</title>
+
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
         * {
-            transition: all 0.2s ease-in;
-        }
-
-        header {
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            margin: 2rem auto;
-            padding: 1rem;
-            flex-wrap: wrap;
-        }
-
-        header img {
-            max-width: 100%;
-            height: auto;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            background: black;
-            font-family: sans-serif;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            background:
+                linear-gradient(rgba(0, 0, 0, .6),
+                    rgba(0, 0, 0, .6)),
+                url('/src/imgs/fondo_demon.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
         }
 
-        .container1 {
-            background-color: #999;
+        .logo {
+            width: 280px;
+            height: 120px;
+            background: url('/src/imgs/logo_demon-Photoroom.png') center/contain no-repeat;
+            margin: 20px auto;
+            animation: logo 2s infinite alternate;
+            transition: width 0.3s ease, height 0.3s ease;
+            filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.3));
+        }
+
+        @keyframes logo {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.08);
+            }
+        }
+
+        .menu {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
             display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
-            width: 850px;
-            margin: 2rem auto;
-            padding: 1rem;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
-        .box {
-            background: #0009;
-            height: 200px;
-            width: 200px;
+        .menu a {
+            background: rgba(0, 0, 0, .55);
+            color: white;
+            text-decoration: none;
+            width: 180px;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 6px solid white;
+            transition: all 0.3s ease;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
-        .box img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
+        .menu a:hover {
+            transform: translateY(-5px);
+            border-bottom: 6px solid #e63946;
+            background: rgba(0, 0, 0, .7);
+            box-shadow: 0 5px 20px rgba(230, 57, 70, 0.4);
         }
 
-        .container2 {
-            background-color: #999;
+        .cards {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, .4);
+            backdrop-filter: blur(5px);
             display: flex;
-            flex-direction: row wrap;
-            align-items: center;
-            gap: 1rem;
-
-            width: 850px;
-            margin: 2rem auto;
-            padding: 1rem;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            scroll-margin-top: 20px;
         }
 
-        .container2 texto {
-            object-fit: cover;
-            width: 100px;
-            height: 100px;
-            justify-content: space-around;
-            align-items: center;
-            margin: 2rem auto;
-            padding: 1rem;
-        }
-
-        .vox {
-            background: #0009;
-            height: 200px;
+        .card {
             width: 200px;
-            aspect-ratio: 1/1;
+            height: 200px;
+            border: 2px solid #e63946;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            position: relative;
+            cursor: pointer;
+            background-color: #1a1a2e;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
-        .vox img {
-            object-fit: cover;
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(230, 57, 70, 0.4);
+            border-color: #ff6b6b;
+        }
+
+        .card figcaption {
             width: 100%;
-            height: 100%;
+            background: rgba(180, 40, 40, 0.85);
+            backdrop-filter: blur(3px);
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
         }
 
-        @media (max-width: 860px) {
-            .container1 {
-                width: 500px;
+        .card:hover figcaption {
+            background: rgba(230, 57, 70, 0.9);
+            padding: 12px;
+        }
+
+        /* Personajes – imágenes desde URLs públicas */
+        .tanjiro {
+            background-image: url('/src/imgs/OIP\ \(2\)-Photoroom.png');
+        }
+
+        .nezuko {
+            background-image: url('/src/imgs/OIP\ \(2\)-Photoroom\ \(1\).png');
+        }
+
+        .zenitsu {
+            background-image: url('/src/imgs/zenitsu-Photoroom.png');
+        }
+
+        .inosuke {
+            background-image: url('/src/imgs/inosuke\(3\).png');
+        }
+
+        .rengoku {
+            background-image: url('/src/imgs/rengoku.png');
+        }
+
+        .info {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            scroll-margin-top: 20px;
+        }
+
+        .personaje {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(230, 57, 70, 0.2);
+        }
+
+        .personaje:hover {
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(230, 57, 70, 0.5);
+            box-shadow: 0 8px 30px rgba(230, 57, 70, 0.15);
+        }
+
+        .personaje p {
+            flex: 1;
+            text-align: justify;
+            line-height: 1.7;
+            transition: color 0.3s ease;
+            font-weight: 400;
+            color: #f0f0f0;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .personaje:hover p {
+            color: #ff6b6b;
+        }
+
+        /* Imágenes laterales (mismas que las tarjetas) */
+        .tanjiro-img,
+        .nezuko-img,
+        .zenitsu-img,
+        .inosuke-img,
+        .rengoku-img {
+            width: 180px;
+            height: 180px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 0 10px rgba(230, 57, 70, 0.2));
+        }
+
+        .personaje:hover .tanjiro-img,
+        .personaje:hover .nezuko-img,
+        .personaje:hover .zenitsu-img,
+        .personaje:hover .inosuke-img,
+        .personaje:hover .rengoku-img {
+            transform: scale(1.05) rotate(-3deg);
+            filter: drop-shadow(0 0 20px rgba(230, 57, 70, 0.4));
+        }
+
+        .tanjiro-img {
+            background-image: url('/src/imgs/OIP\ \(2\)-Photoroom.png');
+        }
+
+        .nezuko-img {
+            background-image: url('/src/imgs/nesuko.png');
+        }
+
+        .zenitsu-img {
+            background-image: url('/src/imgs/zenitsu-Photoroom.png');
+        }
+
+        .inosuke-img {
+            background-image: url('/src/imgs/inosuke\(3\).png');
+        }
+
+        .rengoku-img {
+            background-image: url('/src/imgs/rengoku.png');
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            font-weight: 300;
+            transition: all 0.3s ease;
+            scroll-margin-top: 20px;
+        }
+
+        footer:hover {
+            color: #e63946;
+            transform: scale(1.02);
+        }
+
+        /* ---------- Responsive ---------- */
+        @media(min-width:1040px) {
+            .menu a {
+                width: 200px;
+                padding: 18px;
+                font-size: 1.1rem;
             }
 
-            .container2 {
-                width: 500px;
+            .card {
+                width: 190px;
+                height: 190px;
+            }
+
+            .personaje {
+                padding: 30px;
+                gap: 35px;
+            }
+
+            .tanjiro-img,
+            .nezuko-img,
+            .zenitsu-img,
+            .inosuke-img,
+            .rengoku-img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .logo {
+                width: 320px;
+                height: 140px;
             }
         }
 
-        @media (max-width: 480px) {
-            .container1 {
-                width: 400px;
+        @media(max-width:1039px) and (min-width:769px) {
+            .card {
+                width: 170px;
+                height: 170px;
             }
 
-            .container2 {
+            .personaje {
+                gap: 20px;
+                padding: 18px;
+            }
+
+            .menu a {
+                width: 160px;
+                padding: 14px;
+            }
+
+            .tanjiro-img,
+            .nezuko-img,
+            .zenitsu-img,
+            .inosuke-img,
+            .rengoku-img {
+                width: 160px;
+                height: 160px;
+            }
+
+            .logo {
+                width: 250px;
+                height: 110px;
+            }
+        }
+
+        @media(max-width:768px) {
+            .menu {
                 flex-direction: column;
-                width: 400px;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .menu a {
+                width: 100%;
+                max-width: 300px;
+                padding: 12px;
+            }
+
+            .cards {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 15px;
+                gap: 12px;
+            }
+
+            .card {
+                width: 150px;
+                height: 150px;
+            }
+
+            .card figcaption {
+                font-size: 16px;
+                padding: 8px;
+            }
+
+            .personaje {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+                gap: 15px;
+            }
+
+            .personaje p {
+                width: 100%;
+                text-align: center;
+            }
+
+            .logo {
+                width: 200px;
+                height: 85px;
+            }
+
+            .tanjiro-img,
+            .nezuko-img,
+            .zenitsu-img,
+            .inosuke-img,
+            .rengoku-img {
+                width: 140px;
+                height: 140px;
+            }
+
+            .personaje:hover .tanjiro-img,
+            .personaje:hover .nezuko-img,
+            .personaje:hover .zenitsu-img,
+            .personaje:hover .inosuke-img,
+            .personaje:hover .rengoku-img {
+                transform: scale(1.05) rotate(0deg);
+            }
+        }
+
+        @media(max-width:480px) {
+            .logo {
+                width: 160px;
+                height: 70px;
+                margin: 15px auto;
+            }
+
+            .card {
+                width: 130px;
+                height: 130px;
+            }
+
+            .card figcaption {
+                font-size: 14px;
+                padding: 6px;
+            }
+
+            .personaje {
+                padding: 15px;
+                gap: 12px;
+            }
+
+            .personaje p {
+                font-size: 0.9rem;
+            }
+
+            .tanjiro-img,
+            .nezuko-img,
+            .zenitsu-img,
+            .inosuke-img,
+            .rengoku-img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .cards {
+                padding: 10px;
+                gap: 10px;
+            }
+
+            footer {
+                padding: 20px;
+                font-size: 0.9rem;
             }
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <img src="https://tse1.mm.bing.net/th?id=OIP.OuDTrqOHtYl9EEYVUdHZSAHaB7&pid=Api" alt="" />
-    </header>
-    <div class="container1">
-        <div class="box">
-            <img src="https://cdnb.artstation.com/p/assets/images/images/060/901/393/large/orhun-eren-cengiz-eldenring-copy.jpg?1679564461"
-                alt="" />
+
+    <div class="logo" id="top"></div>
+
+    <section class="cards" id="tarjetas">
+        <div class="card tanjiro">
+            <figcaption>Tanjiro</figcaption>
         </div>
-        <div class="box">
-            <img src="https://tse1.mm.bing.net/th?id=OIP.Av6y3l_1tdx6vOA7kBOyEAHaDt&pid=Api" alt="" />
+        <div class="card nezuko">
+            <figcaption>Nezuko</figcaption>
         </div>
-        <div class="box">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.bpeuzKThsJIBtcIlOJsctQHaE8&pid=Api" alt="" />
+        <div class="card zenitsu">
+            <figcaption>Zenitsu</figcaption>
         </div>
-        <div class="box">
-            <img src="https://tse2.mm.bing.net/th?id=OIP.SD-H-ho-HXvsPf_Uy4NQpwHaLG&pid=Api" alt="" />
+        <div class="card inosuke">
+            <figcaption>Inosuke</figcaption>
         </div>
-    </div>
-    <div class="container2">
-        <div class="vox">
-            <img src="https://tse2.mm.bing.net/th?id=OIP.YYUOG4uVT_IsUkHsyKAIFgHaFY&pid=Api" alt="" />
+        <div class="card rengoku">
+            <figcaption>Rengoku</figcaption>
         </div>
-        <div class="texto">
-            <h2>texto</h2>
+    </section>
+
+    <section class="info" id="descripciones">
+        <div class="personaje">
+            <aside class="tanjiro-img"></aside>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-                explicabo? Ratione enim repellendus quia sit eaque hic tempora? Saepe
-                inventore excepturi quam nihil? Velit nam nesciunt et delectus,
-                voluptate cum!
+                <strong>Tanjiro Kamado</strong> es un joven cazador de demonios que busca una cura para su hermana Nezuko, convertida en demonio. Su corazón bondadoso y su determinación lo llevan a enfrentar a las criaturas más oscuras.
             </p>
         </div>
-    </div>
-    <div class="container2">
-        <div class="vox">
-            <img src="https://tse1.mm.bing.net/th?id=OIP.NpkpFjpQELqFJ75bATEJ4gHaLH&pid=Api" alt="" />
-        </div>
-        <div class="texto">
-            <h2>texto</h2>
+        <div class="personaje">
+            <aside class="nezuko-img"></aside>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-                explicabo? Ratione enim repellendus quia sit eaque hic tempora? Saepe
-                inventore excepturi quam nihil? Velit nam nesciunt et delectus,
-                voluptate cum!
+                <strong>Nezuko Kamado</strong> es la hermana de Tanjiro. A pesar de haber sido transformada en demonio, conserva su humanidad y protege a su hermano con una fuerza y lealtad inquebrantables.
             </p>
         </div>
-    </div>
+        <div class="personaje">
+            <aside class="zenitsu-img"></aside>
+            <p>
+                <strong>Zenitsu Agatsuma</strong> es un espadachín del Trueno. Aunque suele ser temeroso y quejumbroso, en combate despliega una velocidad y técnica letales que lo convierten en un aliado invaluable.
+            </p>
+        </div>
+        <div class="personaje">
+            <aside class="inosuke-img"></aside>
+            <p>
+                <strong>Inosuke Hashibira</strong> es un guerrero criado entre jabalíes. Salvaje y orgulloso, lucha con dos espadas y una máscara de cerdo. Su instinto y ferocidad lo hacen imparable.
+            </p>
+        </div>
+        <div class="personaje">
+            <aside class="rengoku-img"></aside>
+            <p>
+                <strong>Kyojuro Rengoku</strong> fue el Pilar de la Llama. Su espíritu ardiente y su sentido del deber lo convirtieron en un símbolo de esperanza. Su legado inspira a todos los cazadores de demonios.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+Demon Slayer
+    </footer>
+
 </body>
 
 </html>
