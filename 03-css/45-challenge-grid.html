@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45-challenge-grid</title>
+    <link rel="stylesheet" href="estylos.css">
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 10px;
+            padding: 10px;
+        }
+        
+        .grid2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 10px;
+            padding: 10px;
+        }
+        
+        .item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .large {
+            grid-column: span 2; 
+            grid-row: span 2; 
+        }
+        
+        .gord {
+            grid-column: span 3 ;
+            
+        }
+        
+        .gord img{
+            height: 80px;
+            object-fit: cover;
+        }
+        
+        
+        </style>
+</head> 
+<body class="css">
+    <nav>
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg> 
+
+        </a>
+    </nav>
+    </nav>
+    <main>  
+        <header>
+            <h1>45-challenge-grid</h1>
+            <p>
+                Irregular Gallery.
+            </p>
+        </header>
+        <section>
+            <body>
+                <div class="grid">
+                    <div class="item "><img src="./img/color2.png" alt="Imagen 1"></div>
+                    <div class="item large"><img src="./img/color4.png" alt="Imagen 2"></div>
+                    <div class="item"><img src="/03-css/css/images/ani03.png" alt="Imagen 3"></div>
+                    <div class="item "><img src="/03-css/css/images/ani04.png" alt="Imagen 4"></div>
+                    <div class="item "><img src="/03-css/css/images/ani05.png" alt="Imagen 5"></div>
+            
+                </div>
+                <div class="grid2">
+                    <div class="item gord"><img src="/03-css/css/images/ani06.png" alt="Imagen 6"></div>
+                    <div class="item"><img src="/03-css/css/images/ani01.png" alt="Imagen 8"></div>
+                    <div class="item "><img src="/03-css/css/images/ani02.png" alt="Imagen 9"></div>
+                    <div class="item"><img src="/03-css/css/images/ani03.png" alt="Imagen 10"></div>
+                    <div class="item large"><img src="/03-css/css/images/ani04.png" alt="Imagen 11"></div>
+                    <div class="item "><img src="/03-css/css/images/ani05.png" alt="Imagen 12"></div>
+                    <div class="item"><img src="/03-css/css/images/ani06.png" alt="Imagen 13"></div>
+                </div>
+            </body>
+        </section>
+
+    </main>
+
+    
+</body>
+
+
+</html>

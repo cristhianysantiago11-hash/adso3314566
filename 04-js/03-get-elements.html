@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-get-elements</title>
+    <link rel="stylesheet" href="estiloss.css">
+    <style>
+        section {
+            ul {
+                padding: 0;
+            }
+            ul li,
+            figure.animal {
+                background-color: #0006;
+                border-radius: 2px;
+                height: 25px;
+                margin: 2px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                zoom: 2.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="btn-home" href="/04-js/index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"></path></svg>
+    </a>
+    <main>
+        <header>
+            <h1>03 Get Elements</h1>
+            <h2>Access and manipulate HTML elements using JavaScript.</h2>
+        </header>
+<section>
+            <h3>Get Element By Id:</h3>
+            <h4 id="year"></h4>
+            <h3>Get Elements By Tag Name:</h3>
+            <ul>
+                <li>🍎</li>
+                <li>🫐</li>
+                <li>🍊</li>
+                <li>🍒</li>
+            </ul>
+            <h4></h4>
+            <h3>Get Elements By Class Name</h3>
+            <p class="paragraph">Lorem ipsum dolor</p>
+            <p class="paragraph">Lorem ipsum dolor</p>
+            <p class="paragraph">Lorem ipsum dolor</p>
+            <h3>Query Selector & Query Selector All</h3>
+            <figure class="animal first">🦊</figure>
+            <figure class="animal">🐼</figure>
+            <figure class="animal">🐷</figure>
+        </section>
+    </main>
+    <script>
+        const year = document.getElementById('year');
+        const ndate = new Date;
+        year.textContent = `Present Year: ${ndate.getFullYear()}`;
+
+        // Get Elements By Tag Name
+        const fruits = document.getElementsByTagName('li')
+        const h4s = document.getElementsByTagName('h4')
+
+        h4s[1].textContent = `There are ${fruits.length}fruits`
+        h4s[1].innerHTML += ` <br> Last fruit is ${fruits[fruits.length - 1].textContent}`
+        h4s[1].innerHTML += ` <br> First fruit is ${fruits[0].textContent}`
+
+        // Get Elements By Class Name
+        const ps = document.getElementsByClassName('paragraph')
+        ps[1].textContent = `New text value`
+        ps[1].style.backgroundColor = 'red'
+        ps[1].style.color = 'blue';
+        ps[1].style.padding = `0.4rem`
+
+        // Query Selector & Query Selector All
+        const first = document.querySelector('figure.first')
+        first.style.backgroundColor = 'orange'
+
+        const animals = document.querySelectorAll('figure.animal')
+        //animals[0].style.borderRadius = '50%'
+        animals.forEach(animal => {
+            animal.style.borderRadius = '50%'
+        })
+    </script>
+</body>
+</html>
